@@ -1,0 +1,30 @@
+{
+  "name": "curso-basico-nodejs",
+  "version": "0.0.1",
+  "description": "Curso basico de NodeJS",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strangexz/curso-basico-nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "api",
+    "backend"
+  ],
+  "author": "strangexz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/strangexz/curso-basico-nodejs/issues"
+  },
+  "homepage": "https://github.com/strangexz/curso-basico-nodejs#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
