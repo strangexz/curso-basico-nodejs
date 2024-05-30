@@ -1,0 +1,15 @@
+{
+    "watch": [
+        "src",
+        ".env"
+    ],
+    "ext": "json, js",
+    "ignore": [
+        ".git",
+        "views/*",
+        ".tmp/*",
+        "src/**/*.spec.js",
+        "src/**/*.test.js"
+    ],
+    "exec": "cross-env node src/"
+}
