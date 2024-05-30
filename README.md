@@ -1,10 +1,13 @@
 # curso-basico-nodejs
+
 Curso básico de Node JS
 
 ## Sesión #1
+
 - Crear proyecto en el repositorio
 - Clonar proyecto localmente
 - Iniciar el proyecto de Node `npm init`
+- Instalando dependencias: express, dotenv, cross-env
 - Crear carpeta "src"
 - Crear archivo index.js básico
 - Importar la dependencia "express"
@@ -16,3 +19,9 @@ Curso básico de Node JS
 - Importar la dependencia "path"
 - Desarrollar endpoint para el front page
 
+## Sesión #2
+
+- Instalando dependencias: nodemon
+- Configurar nodemon
+- Agregar archivo JSON de prueba
+- Agregando endpoint get básico
