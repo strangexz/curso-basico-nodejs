@@ -2,6 +2,8 @@ const express = require("express");
 const path = require('path');
 const enviroment = require("dotenv").config();
 
+const data = require('./data/data.json');
+
 /* Implementación de express */
 const app = express();
 
@@ -16,6 +18,12 @@ const message = `Hola mundo!!! El API REST en Node JS arrancó en el puerto: ${p
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.html"));
+});
+
+/* Devolviendo data de prueba */
+app.get("/basic/get", (req, res) => {
+  console.log("Devolviendo data de prueba...")
+  return res.status(200).json(data);
 });
 
 /*SECTION - Arrancando el servidor */
