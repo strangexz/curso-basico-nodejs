@@ -19,8 +19,8 @@ const port = process.env.PORT_SERVER;
 const message = `Hola mundo!!! El API REST en Node JS arrancó en el puerto: ${port}`;
 
 /* Configurando cuerpo de la solicitud */
-// app.use(express.urlencoded({extended: false}));
-// app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.html"));
@@ -33,46 +33,46 @@ app.get("/basic/getOperations", (req, res) => {
 });
 
 /* Sumando 2 números */
-// app.post("/basic/addition", (req, res) => {
-//   console.log("Entrando a la ruta /basic/addition...");
-//   const response = {};
+app.post("/basic/addition", (req, res) => {
+  console.log("Entrando a la ruta /basic/addition...");
+  const response = {};
 
-//   /* Validando el campo num1 */
-//   if (_.isUndefined(req.body.num1)) {
-//     response['message'] = "El campo num1 requerido";
+  /* Validando el campo num1 */
+  // if (_.isUndefined(req.body.num1)) {
+  //   response['message'] = "El campo num1 requerido";
 
-//     return res.status(400).json(response);
-//   }
+  //   return res.status(400).json(response);
+  // }
 
-//   if (!_.isNumber(req.body.num1)) {
-//     response['message'] = "El campo num1 debe ser un número";
+  // if (!_.isNumber(req.body.num1)) {
+  //   response['message'] = "El campo num1 debe ser un número";
 
-//     return res.status(400).json(response);
-//   }
+  //   return res.status(400).json(response);
+  // }
 
-//   if (_.isUndefined(req.body.num2)) {
-//     response['message'] = "Campo num2 requerido";
+  // if (_.isUndefined(req.body.num2)) {
+  //   response['message'] = "Campo num2 requerido";
 
-//     return res.status(400).json(response);
-//   }
+  //   return res.status(400).json(response);
+  // }
 
-//   if (!_.isNumber(req.body.num2)) {
-//     response['message'] = "El campo num2 debe ser un número";
+  // if (!_.isNumber(req.body.num2)) {
+  //   response['message'] = "El campo num2 debe ser un número";
 
-//     return res.status(400).json(response);
-//   }
+  //   return res.status(400).json(response);
+  // }
 
-//   const num1 = req.body.num1;
-//   const num2 = req.body.num2;
+  const num1 = req.body.num1;
+  const num2 = req.body.num2;
 
-//   const total = num1 + num2;
+  const total = num1 + num2;
 
-//   response['num1'] = num1;
-//   response['num2'] = num2;
-//   response['total'] = total;
+  response['num1'] = num1;
+  response['num2'] = num2;
+  response['total'] = total;
 
-//   return res.status(200).json(response);
-// });
+  return res.status(200).json(response);
+});
 
 /* Multiplicar 2 números */
 // app.put("/basic/multiply", (req, res) => {
