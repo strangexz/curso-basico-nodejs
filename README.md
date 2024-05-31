@@ -21,7 +21,11 @@ Curso básico de Node JS
 
 ## Sesión #2
 
-- Instalando dependencias: nodemon
-- Configurar nodemon
 - Agregar archivo JSON de prueba
 - Agregando endpoint get básico
+- Crear solicitud GET en POSTMAN
+- Instalando dependencias: nodemon underscore validator
+- Configurar nodemon
+- Agregar endpoint post de suma
+- Crear solicitud POST en POSTMAN
+- Agregar validación de campos en el método POST
