@@ -1,0 +1,6 @@
+{
+    "get": "Obteniendo operaciones",
+    "post": "Sumar",
+    "put": "Multiplicar",
+    "delete": "División"
+}
