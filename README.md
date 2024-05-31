@@ -22,10 +22,16 @@ Curso básico de Node JS
 ## Sesión #2
 
 - Agregar archivo JSON de prueba
-- Agregando endpoint get básico
+- Agregando endpoint GET básico
 - Crear solicitud GET en POSTMAN
 - Instalando dependencias: nodemon underscore validator
 - Configurar nodemon
-- Agregar endpoint post de suma
+- Agregar endpoint POST de suma
 - Crear solicitud POST en POSTMAN
 - Agregar validación de campos en el método POST
+- Agregar endpoint PUT de multiplicación
+- Agregar validación de campos en el método PUT
+- Crear solicitud PUT en POSTMAN
+- Agregar endpoint DELETE de divión
+- Agregar validación de campos en el método DELETE
+- Crear solicitud DELETE en POSTMAN

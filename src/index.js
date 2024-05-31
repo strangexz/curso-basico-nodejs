@@ -116,6 +116,55 @@ app.put("/basic/multiply", (req, res) => {
   return res.status(200).json(response);
 });
 
+/* Dividir 2 números */
+app.delete("/basic/division", (req, res) => {
+  console.log("Entrando a la ruta /basic/division...");
+  const response = {};
+
+  /* Validando campo "num1" */
+  if (_.isUndefined(req.body.num1)) {
+    response['message'] = "El campo num1 requerido";
+
+    return res.status(400).json(response);
+  }
+
+  if (!_.isNumber(req.body.num1)) {
+    response['message'] = "El campo num1 debe ser un número";
+
+    return res.status(400).json(response);
+  }
+
+  /* Validando campo "num2" */
+  if (_.isUndefined(req.body.num2)) {
+    response['message'] = "Campo num2 requerido";
+
+    return res.status(400).json(response);
+  }
+
+  if (!_.isNumber(req.body.num2)) {
+    response['message'] = "El campo num2 debe ser un número";
+
+    return res.status(400).json(response);
+  }
+
+  if (req.body.num2 <= 0) {
+    response['message'] = "El campo num2 debe ser mayo a cero (0)";
+
+    return res.status(400).json(response);
+  }
+
+  const num1 = req.body.num1;
+  const num2 = req.body.num2;
+
+  const quotient = num1 / num2;
+
+  response['num1'] = num1;
+  response['num2'] = num2;
+  response['quotient'] = quotient;
+
+  return res.status(200).json(response);
+});
+
 /*SECTION - Arrancando el servidor */
 app.listen(port, () => {
   console.log(message);
