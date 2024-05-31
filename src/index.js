@@ -75,46 +75,46 @@ app.post("/basic/addition", (req, res) => {
 });
 
 /* Multiplicar 2 números */
-// app.put("/basic/multiply", (req, res) => {
-//   console.log("Entrando a la ruta /basic/multiply...");
-//   const response = {};
+app.put("/basic/multiply", (req, res) => {
+  console.log("Entrando a la ruta /basic/multiply...");
+  const response = {};
 
-//   /* Validando el campo num1 */
-//   if (_.isUndefined(req.body.num1)) {
-//     response['message'] = "El campo num1 requerido";
+  /* Validando el campo num1 */
+  if (_.isUndefined(req.body.num1)) {
+    response['message'] = "El campo num1 requerido";
 
-//     return res.status(400).json(response);
-//   }
+    return res.status(400).json(response);
+  }
 
-//   if (!_.isNumber(req.body.num1)) {
-//     response['message'] = "El campo num1 debe ser un número";
+  if (!_.isNumber(req.body.num1)) {
+    response['message'] = "El campo num1 debe ser un número";
 
-//     return res.status(400).json(response);
-//   }
+    return res.status(400).json(response);
+  }
 
-//   if (_.isUndefined(req.body.num2)) {
-//     response['message'] = "Campo num2 requerido";
+  if (_.isUndefined(req.body.num2)) {
+    response['message'] = "Campo num2 requerido";
 
-//     return res.status(400).json(response);
-//   }
+    return res.status(400).json(response);
+  }
 
-//   if (!_.isNumber(req.body.num2)) {
-//     response['message'] = "El campo num2 debe ser un número";
+  if (!_.isNumber(req.body.num2)) {
+    response['message'] = "El campo num2 debe ser un número";
 
-//     return res.status(400).json(response);
-//   }
+    return res.status(400).json(response);
+  }
 
-//   const num1 = req.body.num1;
-//   const num2 = req.body.num2;
+  const num1 = req.body.num1;
+  const num2 = req.body.num2;
 
-//   const product = num1 * num2;
+  const product = num1 * num2;
 
-//   response['num1'] = num1;
-//   response['num2'] = num2;
-//   response['product'] = product;
+  response['num1'] = num1;
+  response['num2'] = num2;
+  response['product'] = product;
 
-//   return res.status(200).json(response);
-// });
+  return res.status(200).json(response);
+});
 
 /*SECTION - Arrancando el servidor */
 app.listen(port, () => {
