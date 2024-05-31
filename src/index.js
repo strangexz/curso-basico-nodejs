@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
-// const _ = require('underscore');
-// const validator = require('validator');
+const _ = require('underscore');
+const validator = require('validator');
 const enviroment = require("dotenv").config();
 
 const data = require("./data/data.json");
@@ -38,29 +38,29 @@ app.post("/basic/addition", (req, res) => {
   const response = {};
 
   /* Validando el campo num1 */
-  // if (_.isUndefined(req.body.num1)) {
-  //   response['message'] = "El campo num1 requerido";
+  if (_.isUndefined(req.body.num1)) {
+    response['message'] = "El campo num1 requerido";
 
-  //   return res.status(400).json(response);
-  // }
+    return res.status(400).json(response);
+  }
 
-  // if (!_.isNumber(req.body.num1)) {
-  //   response['message'] = "El campo num1 debe ser un número";
+  if (!_.isNumber(req.body.num1)) {
+    response['message'] = "El campo num1 debe ser un número";
 
-  //   return res.status(400).json(response);
-  // }
+    return res.status(400).json(response);
+  }
 
-  // if (_.isUndefined(req.body.num2)) {
-  //   response['message'] = "Campo num2 requerido";
+  if (_.isUndefined(req.body.num2)) {
+    response['message'] = "Campo num2 requerido";
 
-  //   return res.status(400).json(response);
-  // }
+    return res.status(400).json(response);
+  }
 
-  // if (!_.isNumber(req.body.num2)) {
-  //   response['message'] = "El campo num2 debe ser un número";
+  if (!_.isNumber(req.body.num2)) {
+    response['message'] = "El campo num2 debe ser un número";
 
-  //   return res.status(400).json(response);
-  // }
+    return res.status(400).json(response);
+  }
 
   const num1 = req.body.num1;
   const num2 = req.body.num2;
