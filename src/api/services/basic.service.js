@@ -71,8 +71,25 @@ const putMultiply = (number1, number2) => {
   }
 }
 
+
+const deleteDivision = (number1, number2) => {
+  try {
+    console.log('Entrando al servicio deleteDivision...');
+
+    const quotient = number1 / number2;
+
+    console.log('Saliendo del servicio deleteDivision.');
+
+    return { isOk: true, data: { number1, number2, quotient }, error: null };
+  } catch (e) {
+    console.error('=>', e);
+    return { isOk: false, data: null, error: e.message };
+  }
+}
+
 module.exports = {
   getOperations,
   postAddition,
-  putMultiply
+  putMultiply,
+  deleteDivision
 };
