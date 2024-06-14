@@ -33,53 +33,6 @@ app.get('/', (req, res) => {
 /* Implementando rutas */
 app.use('/nodeCourse', router, apiRoutes);
 
-/* Devolviendo data de prueba */
-app.get('/basic/getOperations', (req, res) => {
-  console.log('entrando a la ruta /basic/getOperations...');
-  return res.status(200).json(data);
-});
-
-/* Sumando 2 números */
-app.post('/basic/addition', (req, res) => {
-  console.log('Entrando a la ruta /basic/addition...');
-  const response = {};
-
-  /* Validando el campo num1 */
-  if (_.isUndefined(req.body.num1)) {
-    response['message'] = 'El campo num1 requerido';
-
-    return res.status(400).json(response);
-  }
-
-  if (!_.isNumber(req.body.num1)) {
-    response['message'] = 'El campo num1 debe ser un número';
-
-    return res.status(400).json(response);
-  }
-
-  if (_.isUndefined(req.body.num2)) {
-    response['message'] = 'Campo num2 requerido';
-
-    return res.status(400).json(response);
-  }
-
-  if (!_.isNumber(req.body.num2)) {
-    response['message'] = 'El campo num2 debe ser un número';
-
-    return res.status(400).json(response);
-  }
-
-  const num1 = req.body.num1;
-  const num2 = req.body.num2;
-
-  const total = num1 + num2;
-
-  response['num1'] = num1;
-  response['num2'] = num2;
-  response['total'] = total;
-
-  return res.status(200).json(response);
-});
 
 /* Multiplicar 2 números */
 app.put('/basic/multiply', (req, res) => {

@@ -21,6 +21,32 @@ const getOperations = () => {
   }
 };
 
+/**
+ * Suma de numeros
+ *
+ * Método que tiene como función sumar 2 números y devolver
+ * el total
+ *
+ * @param {Number} number1 - Numero 1 a sumar
+ * @param {Number} number2 - Numero 2 a sumar
+ * @returns
+ */
+const postAddition = (number1, number2) => {
+  try {
+    console.log('Entrando al servicio postAddittion...');
+
+    const total = number1 + number2;
+
+    console.log('Saliendo del servicio postAddition.');
+
+    return { isOk: true, data: { number1, number2, total }, error: null };
+  } catch (e) {
+    console.error('=>', e);
+    return { isOk: false, data: null, error: e.message };
+  }
+};
+
 module.exports = {
   getOperations,
+  postAddition,
 };
