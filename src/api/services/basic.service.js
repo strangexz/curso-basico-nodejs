@@ -10,7 +10,7 @@ const getOperations = () => {
   try {
     console.log('Entrando al método getOperations...');
 
-    const data = require('../../data/data1.json');
+    const data = require('../../data/data.json');
 
     console.log('Devolviendo respuesta...');
 
