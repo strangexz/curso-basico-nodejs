@@ -29,7 +29,7 @@ const getOperations = () => {
  *
  * @param {Number} number1 - Numero 1 a sumar
  * @param {Number} number2 - Numero 2 a sumar
- * @returns
+ * @returns la suma total de los números
  */
 const postAddition = (number1, number2) => {
   try {
@@ -46,7 +46,33 @@ const postAddition = (number1, number2) => {
   }
 };
 
+/**
+ * Producto de dos numeros
+ *
+ * Método que tiene como función multiplicar 2 números y devolver
+ * el producto
+ *
+ * @param {Number} number1 - Numero 1 a sumar
+ * @param {Number} number2 - Numero 2 a sumar
+ * @returns El producto de los dos números
+ */
+const putMultiply = (number1, number2) => {
+  try {
+    console.log('Entrando al servicio putMultiply...');
+
+    const product = number1 * number2;
+
+    console.log('Saliendo del servicio putMultiply.');
+
+    return { isOk: true, data: { number1, number2, product }, error: null };
+  } catch (e) {
+    console.error('=>', e);
+    return { isOk: false, data: null, error: e.message };
+  }
+}
+
 module.exports = {
   getOperations,
   postAddition,
+  putMultiply
 };

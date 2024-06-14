@@ -97,7 +97,67 @@ const postAddition = (req, res) => {
   }
 };
 
+/**
+ * Multiplica 2 números
+ *
+ * Método que tiene la función de recibir 2 números, multiplicarlos
+ * y devolver el producto de ello.
+ *
+ * @param {Request} req - objeto de solicitud http
+ * @param {Response} res - objeto de respuesta http
+ */
+const putMultiply = (req, res) => {
+  console.log('Entrando al controlador putMultiply...');
+
+  const response = {};
+
+  response['isOk'] = false;
+
+   /* Validando el campo num1 */
+   if (_.isUndefined(req.body.num1)) {
+    response['message'] = 'El campo num1 requerido';
+
+    return res.status(StatusCodes.BAD_REQUEST).json(response);
+  }
+
+  if (!_.isNumber(req.body.num1)) {
+    response['message'] = 'El campo num1 debe ser un número';
+
+    return res.status(StatusCodes.BAD_REQUEST).json(response);
+  }
+
+  if (_.isUndefined(req.body.num2)) {
+    response['message'] = 'Campo num2 requerido';
+
+    return res.status(StatusCodes.BAD_REQUEST).json(response);
+  }
+
+  if (!_.isNumber(req.body.num2)) {
+    response['message'] = 'El campo num2 debe ser un número';
+
+    return res.status(StatusCodes.BAD_REQUEST).json(response);
+  }
+
+  const num1 = req.body.num1;
+  const num2 = req.body.num2;
+  const result = BasicService.putMultiply(num1, num2);
+
+  response['result'] = result.data;
+  response['isOk'] = result.isOk;
+
+  console.log('Devolviendo respuesta...');
+
+  if (result.isOk === true) {
+    response['message'] = 'Devolviendo los datos exitosamente';
+    return res.status(StatusCodes.OK).json(response);
+  } else {
+    response['message'] = result.error;
+    return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
+  }
+}
+
 module.exports = {
   getOperations,
   postAddition,
+  putMultiply
 };
