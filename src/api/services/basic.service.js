@@ -10,14 +10,14 @@ const getOperations = () => {
   try {
     console.log('Entrando al método getOperations...');
 
-    const data = require('../../data/data.json');
+    const data = require('../../data/data1.json');
 
     console.log('Devolviendo respuesta...');
 
     return { isOk: true, data, error: null };
-  } catch (error) {
-    console.error(e);
-    return { isOk: false, data: null, error: e };
+  } catch (e) {
+    console.error('=>', e);
+    return { isOk: false, data: null, error: e.message };
   }
 };
 

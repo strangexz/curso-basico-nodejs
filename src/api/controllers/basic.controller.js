@@ -19,19 +19,20 @@ const getOperations = (req, res) => {
     const result = BasicService.getOperations();
 
     response['result'] = result.data;
+    response['isOk'] = result.isOk;
 
     console.log('Devolviendo respuesta...');
 
     if (result.isOk === true) {
       response['message'] = 'Devolviendo los datos exitosamente';
       return res.status(StatusCodes.OK).json(response);
-    }else{
-      response['message'] = result.error.stack;
+    } else {
+      response['message'] = result.error;
       return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
     }
   } catch (error) {
-    console.error(e);
-    throw e;
+    console.error(error);
+    throw error;
   }
 };
 
