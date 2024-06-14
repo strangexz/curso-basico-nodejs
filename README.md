@@ -24,8 +24,10 @@ Curso básico de Node JS
 - Agregar archivo JSON de prueba
 - Agregando endpoint GET básico
 - Crear solicitud GET en POSTMAN
-- Instalando dependencias: nodemon underscore validator
+- Instalar las siguientes dependencias: underscore validator
+- Instalar las siguientes dependencias de desarrollo: nodemon
 - Configurar nodemon
+- Configurar el cuerpo de la solicitud en express
 - Agregar endpoint POST de suma
 - Crear solicitud POST en POSTMAN
 - Agregar validación de campos en el método POST
@@ -35,3 +37,23 @@ Curso básico de Node JS
 - Agregar endpoint DELETE de divión
 - Agregar validación de campos en el método DELETE
 - Crear solicitud DELETE en POSTMAN
+
+## Sesión #3
+
+- Instalar los siguientes plugins para vscode: editorconfig eslint prettier
+- Instalando las siguientes dependencias de desarrollo: eslint prettier eslint-config-prettier eslint-plugin-prettier
+- Agregar el archivo de configuración de editorconfig
+- Agregar configuración de eslint `npx eslint --init`
+- Crear los siguientes directorios:
+  - src/config
+  - src/api
+  - src/api/routes
+  - src/api/services
+  - src/api/controllers
+- Implementar la arquitectura de 3 capaz a los primeros endpoints
+- Instalando las siguientes dependencias: http-status-codes
+- Implementando enrutadores
+- Instalar dependencias: knex objection
+
+  - src/api/models
+
