@@ -1,6 +1,6 @@
 {
-    "get": "Obteniendo operaciones",
-    "post": "Sumar",
-    "put": "Multiplicar",
-    "delete": "División"
+  "get": "Obteniendo operaciones",
+  "post": "Sumar",
+  "put": "Multiplicar",
+  "delete": "División"
 }
