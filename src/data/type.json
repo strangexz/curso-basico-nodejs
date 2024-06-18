@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "description": "Normal"
+  },
+  {
+    "id": 2,
+    "description": "Fighting"
+  },
+  {
+    "id": 3,
+    "description": "Flying"
+  },
+  {
+    "id": 4,
+    "description": "Poison"
+  },
+  {
+    "id": 5,
+    "description": "Ground"
+  },
+  {
+    "id": 6,
+    "description": "Rock"
+  },
+  {
+    "id": 7,
+    "description": "Bug"
+  },
+  {
+    "id": 8,
+    "description": "Ghost"
+  },
+  {
+    "id": 9,
+    "description": "Steel"
+  },
+  {
+    "id": 10,
+    "description": "Fire"
+  },
+  {
+    "id": 11,
+    "description": "Water"
+  },
+  {
+    "id": 12,
+    "description": "Grass"
+  },
+  {
+    "id": 13,
+    "description": "Electric"
+  },
+  {
+    "id": 14,
+    "description": "Psychic"
+  },
+  {
+    "id": 15,
+    "description": "Ice"
+  },
+  {
+    "id": 16,
+    "description": "Dragon"
+  },
+  {
+    "id": 17,
+    "description": "Dark"
+  },
+  {
+    "id": 18,
+    "description": "Fairy"
+  }
+]

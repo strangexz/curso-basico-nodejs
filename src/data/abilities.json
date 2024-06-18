@@ -1,0 +1,126 @@
+[
+  {
+    "id": 65,
+    "description": "Overgrow', 'Amplifies Grass-type attacks when HP is low"
+  },
+  {
+    "id": 66,
+    "description": "Blaze', 'Amplifies Fire-type attacks when HP is low"
+  },
+  {
+    "id": 67,
+    "description": "Torrent', 'Amplifies Water-type attacks when HP is low"
+  },
+  {
+    "id": 14,
+    "description": "Compound Eyes', 'Boosts Accuracy"
+  },
+  {
+    "id": 68,
+    "description": "Swarm', 'Amplifies Bug-type attacks when HP is low"
+  },
+  {
+    "id": 51,
+    "description": "Keen Eye', 'Accuracy cannot be reduced by an opponent"
+  },
+  {
+    "id": 77,
+    "description": "Tangled Feet', 'Raises Speed when confused"
+  },
+  {
+    "id": 9,
+    "description": "Static', 'May paralyze an opponent that makes contact"
+  },
+  {
+    "id": 8,
+    "description": "Sand Veil', 'Increases Evasion in a sandstorm"
+  },
+  {
+    "id": 56,
+    "description": "Cute Charm', 'May cause infatuation on contact"
+  },
+  {
+    "id": 98,
+    "description": "Magic Guard', 'Grants total protection from indirect damage"
+  },
+  {
+    "id": 11,
+    "description": "Water Absorb', 'Water-type attacks heal the Pokémon"
+  },
+  {
+    "id": 6,
+    "description": "Damp', 'Prevents use of self-destruction attacks by any Pokémon on the field"
+  },
+  {
+    "id": 26,
+    "description": "Levitate', 'Grants immunity to Ground-type moves"
+  },
+  {
+    "id": 12,
+    "description": "Oblivious', 'Prevents infatuation"
+  },
+  {
+    "id": 108,
+    "description": "Forewarn', 'Shows the opponents most powerful move"
+  },
+  {
+    "id": 33,
+    "description": "Swift Swim', 'Doubles speed under rain conditions"
+  },
+  {
+    "id": 75,
+    "description": "Shell Armor', 'Grants protection from critical hits"
+  },
+  {
+    "id": 29,
+    "description": "Clear Body', 'Stats cannot be lowered by an opponent"
+  },
+  {
+    "id": 34,
+    "description": "Chlorophyll', 'Doubles speed under intense sunlight"
+  },
+  {
+    "id": 94,
+    "description": "Solar Power', 'Under intense sunlight, Sp. Attack increased, 1/8 HP lost every turn"
+  },
+  {
+    "id": 44,
+    "description": "Rain Dish', 'Gradually recovers HP in rain"
+  },
+  {
+    "id": 110,
+    "description": "Tinted Lens', 'Raises power of uneffective moves"
+  },
+  {
+    "id": 92,
+    "description": "Sniper', 'Increases power of critical hits"
+  },
+  {
+    "id": 145,
+    "description": "Big Pecks', 'Defense cannot be lowered by an opponent"
+  },
+  {
+    "id": 31,
+    "description": "Lightning Rod', 'Redirects Electric-type attacks towards this Pokémon, nullifies them and increases Sp. Attack"
+  },
+  {
+    "id": 146,
+    "description": "Sand Rush', 'Doubles speed in a sandstorm"
+  },
+  {
+    "id": 132,
+    "description": "Friend Guard', 'Decreases damage inflicted against ally Pokémon"
+  },
+  {
+    "id": 87,
+    "description": "Dry Skin', 'Recovers HP in rain, loses HP under intense sunlight"
+  },
+  {
+    "id": 133,
+    "description": "Weak Armor', 'Raises Speed and lowers Defense upon being hit"
+  },
+  {
+    "id": 135,
+    "description": "Light Metal', 'Halves weight"
+  }
+]
