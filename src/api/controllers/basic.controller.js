@@ -1,4 +1,5 @@
 const _ = require('underscore');
+const path = require('path');
 const { StatusCodes } = require('http-status-codes');
 
 /* Importanto servicios */
@@ -238,9 +239,21 @@ const deleteDivision = (req, res) => {
   }
 };
 
+/**
+ * Devuelve el frontpage
+ *
+ * @param {Request} req - objeto de solicitud http
+ * @param {Response} res - objeto de respuesta http
+ * @returns un archivo html con el frontpage del api
+ */
+const getFrontpage = (req, res) => {
+  return res.sendFile(path.join(__dirname, '../../views/index.html'));
+}
+
 module.exports = {
   getOperations,
   postAddition,
   putMultiply,
-  deleteDivision
+  deleteDivision,
+  getFrontpage
 };

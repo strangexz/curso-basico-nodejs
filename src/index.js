@@ -24,10 +24,6 @@ app.use(express.json());
 /* Cargar rutas */
 const apiRoutes = require('./api/routes');
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './views/index.html'));
-});
-
 /* Implementando rutas */
 app.use('/nodeCourse', router, apiRoutes);
 
