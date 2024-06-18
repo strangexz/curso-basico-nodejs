@@ -2,7 +2,7 @@
 
 Curso básico de Node JS
 
-## Sesión #1
+## Sesión #01
 
 - Crear proyecto en el repositorio
 - Clonar proyecto localmente
@@ -19,7 +19,7 @@ Curso básico de Node JS
 - Importar la dependencia "path"
 - Desarrollar endpoint para el front page
 
-## Sesión #2
+## Sesión #02
 
 - Agregar archivo JSON de prueba
 - Agregando endpoint GET básico
@@ -38,7 +38,7 @@ Curso básico de Node JS
 - Agregar validación de campos en el método DELETE
 - Crear solicitud DELETE en POSTMAN
 
-## Sesión #3
+## Sesión #03
 
 - Instalar los siguientes plugins para vscode: editorconfig eslint prettier
 - Instalando las siguientes dependencias de desarrollo: eslint prettier eslint-config-prettier eslint-plugin-prettier
@@ -55,5 +55,15 @@ Curso básico de Node JS
 - Implementando enrutadores
 - Instalar dependencias: knex objection
 
-  - src/api/models
+## Sesión #04
 
+- Instalar las siguientes dependencias: knex objection sqlite3
+- Instalar los siguientes plugins para vscode: Sqlite Viewer
+- Desarrollar el manejador de conexión a la base de datos: `npx knex init`
+
+- Generar los archivos de migración:
+  - Generar la tabla de tipos de pokemon: `npx knex migrate:make type`
+  - Generar la tabla de habilidades de pokemon: `npx knex migrate:make abilitiy`
+  - Generar la tabla de entrenadores de pokemon: `npx knex migrate:make trainer`
+  - Generar la tabla de pokemons: `npx knex migrate:make pokemon`
+- src/api/models
