@@ -1,0 +1,1642 @@
+[
+  {
+    "id": 1,
+    "name": "Placaje",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño",
+    "pp": 35,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 2,
+    "name": "Danza espada",
+    "power": 0,
+    "precision": 100,
+    "description": "Aumenta en dos niveles el ataque del usuario",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 3,
+    "name": "Burbuja",
+    "power": 20,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de bajar la velocidad",
+    "pp": 30,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 4,
+    "name": "Cascada",
+    "power": 80,
+    "precision": 100,
+    "description": "Causa daño",
+    "pp": 15,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 5,
+    "name": "Hidrobomba",
+    "power": 120,
+    "precision": 80,
+    "description": "Causa daño",
+    "pp": 5,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 6,
+    "name": "Martillazo",
+    "power": 90,
+    "precision": 85,
+    "description": "Causa daño con probabilidad de dar golpe critico(12,5%)",
+    "pp": 10,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 7,
+    "name": "Pistola de agua",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño",
+    "pp": 25,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 8,
+    "name": "Rayo burbuja",
+    "power": 65,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de bajar la velocidad",
+    "pp": 20,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 9,
+    "name": "Refugio",
+    "power": 0,
+    "precision": 100,
+    "description": "Aumenta la defensa en un nivel",
+    "pp": 40,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 10,
+    "name": "Surf",
+    "power": 95,
+    "precision": 100,
+    "description": "Causa daño",
+    "pp": 15,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 11,
+    "name": "Tenaza",
+    "power": 35,
+    "precision": 75,
+    "description": "Causa daño durante 2-5 turnos. Imposibilidad de atacar al objetivo",
+    "pp": 15,
+    "id_type": 1,
+    "priority": 0
+  },
+  {
+    "id": 12,
+    "name": "Chupa vidas",
+    "power": 20,
+    "precision": 100,
+    "description": "Causa daño y recupera el 50% PS quitados",
+    "pp": 15,
+    "id_type": 2,
+    "priority": 0
+  },
+  {
+    "id": 13,
+    "name": "Disparo demora",
+    "power": 0,
+    "precision": 95,
+    "description": "Baja la velocidad del objetivo",
+    "pp": 40,
+    "id_type": 2,
+    "priority": 0
+  },
+  {
+    "id": 14,
+    "name": "Doble ataque",
+    "power": 25,
+    "precision": 100,
+    "description": "Causa daño golpeando dos veces. Cada golpe tiene un 20% de probabilidad de envenenar.",
+    "pp": 20,
+    "id_type": 2,
+    "priority": 0
+  },
+  {
+    "id": 15,
+    "name": "Pin misil",
+    "power": 14,
+    "precision": 85,
+    "description": "Causa daño al objetivo de 2 a 5 veces",
+    "pp": 20,
+    "id_type": 2,
+    "priority": 0
+  },
+  {
+    "id": 16,
+    "name": "Furia dragón",
+    "power": 0,
+    "precision": 100,
+    "description": "Quita siempre 40 PS al obejtivo",
+    "pp": 10,
+    "id_type": 3,
+    "priority": 0
+  },
+  {
+    "id": 17,
+    "name": "Impactrueno",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de paralizar el objetivo.",
+    "pp": 30,
+    "id_type": 4,
+    "priority": 0
+  },
+  {
+    "id": 18,
+    "name": "Onda trueno",
+    "power": 0,
+    "precision": 100,
+    "description": "Paraliza el objetivo",
+    "pp": 20,
+    "id_type": 4,
+    "priority": 0
+  },
+  {
+    "id": 19,
+    "name": "Puño trueno",
+    "power": 75,
+    "precision": 100,
+    "description": "Causa daño y tiene un 10% de paralizar el objetivo",
+    "pp": 35,
+    "id_type": 4,
+    "priority": 0
+  },
+  {
+    "id": 20,
+    "name": "Rayo",
+    "power": 95,
+    "precision": 100,
+    "description": "Causa daño y tiene un 10% de paralizar el objetivo",
+    "pp": 15,
+    "id_type": 4,
+    "priority": 0
+  },
+  {
+    "id": 21,
+    "name": "Trueno",
+    "power": 120,
+    "precision": 70,
+    "description": "Causa daño y tiene un 10% de paralizar el objetivo",
+    "pp": 10,
+    "id_type": 4,
+    "priority": 0
+  },
+  {
+    "id": 23,
+    "name": "Lenguetazo",
+    "power": 20,
+    "precision": 100,
+    "description": "Causa daño y tiene un 30% de paralizar el objetivo",
+    "pp": 30,
+    "id_type": 5,
+    "priority": 0
+  },
+  {
+    "id": 24,
+    "name": "Rayo confuso",
+    "power": 0,
+    "precision": 100,
+    "description": "Confunde al objetivo",
+    "pp": 10,
+    "id_type": 5,
+    "priority": 0
+  },
+  {
+    "id": 25,
+    "name": "Tinieblas",
+    "power": 0,
+    "precision": 100,
+    "description": "Resta la cantidad de PS equivalentes al nivel de usuario",
+    "pp": 15,
+    "id_type": 5,
+    "priority": 0
+  },
+  {
+    "id": 26,
+    "name": "Ascuas",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de quemar al objetivo",
+    "pp": 25,
+    "id_type": 6,
+    "priority": 0
+  },
+  {
+    "id": 27,
+    "name": "Giro fuego",
+    "power": 15,
+    "precision": 100,
+    "description": "Causa dañó de 2 a 5 turnos. Imposibilidad de atacar al objetivo",
+    "pp": 15,
+    "id_type": 6,
+    "priority": 0
+  },
+  {
+    "id": 28,
+    "name": "Lanzallamas",
+    "power": 95,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de quemar al objetivo",
+    "pp": 15,
+    "id_type": 6,
+    "priority": 0
+  },
+  {
+    "id": 29,
+    "name": "Llamarada",
+    "power": 120,
+    "precision": 85,
+    "description": "Causa daño y tiene una probabilidad del 30% de quemar al objetivo",
+    "pp": 5,
+    "id_type": 6,
+    "priority": 0
+  },
+  {
+    "id": 30,
+    "name": "Puño fuego",
+    "power": 75,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de quemar al objetivo",
+    "pp": 15,
+    "id_type": 4,
+    "priority": 0
+  },
+  {
+    "id": 31,
+    "name": "Neblina",
+    "power": 0,
+    "precision": 0,
+    "description": "Neblina evita durante 5 turnos otros pokemon puedan reducir las estadisiticas del equipo aliado",
+    "pp": 30,
+    "id_type": 7,
+    "priority": 0
+  },
+  {
+    "id": 32,
+    "name": "Niebla",
+    "power": 0,
+    "precision": 0,
+    "description": "Restaura todos los cambios, tantos positivos como negativos, en las estadisitcas de todos los pokemon.",
+    "pp": 30,
+    "id_type": 7,
+    "priority": 0
+  },
+  {
+    "id": 33,
+    "name": "Puño hielo",
+    "power": 75,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de congelar al objetivo",
+    "pp": 15,
+    "id_type": 7,
+    "priority": 0
+  },
+  {
+    "id": 34,
+    "name": "Rayo aurora",
+    "power": 65,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de bajar un nivel el ataque del objetivo",
+    "pp": 20,
+    "id_type": 7,
+    "priority": 0
+  },
+  {
+    "id": 35,
+    "name": "Rayo hielo",
+    "power": 95,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de congelar al objetivo",
+    "pp": 10,
+    "id_type": 7,
+    "priority": 0
+  },
+  {
+    "id": 36,
+    "name": "Ventisca",
+    "power": 120,
+    "precision": 90,
+    "description": "Causa daño y tiene una probabilidad del 10% de congelar al objetivo",
+    "pp": 5,
+    "id_type": 7,
+    "priority": 0
+  },
+  {
+    "id": 37,
+    "name": "Contraataque",
+    "power": 0,
+    "precision": 100,
+    "description": "Devuelve el doble daño recibido si es un físico",
+    "pp": 20,
+    "id_type": 8,
+    "priority": 5
+  },
+  {
+    "id": 38,
+    "name": "Doble patada",
+    "power": 30,
+    "precision": 100,
+    "description": "Causa daño, golpeando 2 veces en un mismo turno",
+    "pp": 30,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 39,
+    "name": "Movimiento sísmico",
+    "power": 0,
+    "precision": 100,
+    "description": "Resta la cantidad de PS equivalentes al nivel de usuario",
+    "pp": 20,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 40,
+    "name": "Patada baja",
+    "power": 50,
+    "precision": 90,
+    "description": "Causa daño y tiene del 30% de retroceder al objetivo",
+    "pp": 20,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 41,
+    "name": "Patada giro",
+    "power": 60,
+    "precision": 85,
+    "description": "Causa daño y tiene del 30% de retroceder al objetivo",
+    "pp": 15,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 42,
+    "name": "Patada salto",
+    "power": 70,
+    "precision": 100,
+    "description": "Causa daño. Si falla, el usuario se golpea a si mismo restandole 1 PS.",
+    "pp": 25,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 43,
+    "name": "Patada salto alta",
+    "power": 85,
+    "precision": 90,
+    "description": "Causa daño. Si falla, el usuario se golpea a si mismo restandole 1 PS.",
+    "pp": 20,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 44,
+    "name": "Sumisión",
+    "power": 80,
+    "precision": 80,
+    "description": "Causa daño. Causa daño de retroceso al usuario de 1/4 del daño causado.",
+    "pp": 20,
+    "id_type": 8,
+    "priority": 0
+  },
+  {
+    "id": 45,
+    "name": "Afilar",
+    "power": 0,
+    "precision": 100,
+    "description": "sube el ataque del usuario en un nivel",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 46,
+    "name": "Agarre",
+    "power": 55,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 47,
+    "name": "Amortiguador",
+    "power": 0,
+    "precision": 0,
+    "description": "Restaura la mitad de los PS máximos del usuario",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 48,
+    "name": "Anulación",
+    "power": 0,
+    "precision": 55,
+    "description": "Anula un movimiento del objetivo",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 49,
+    "name": "Arañazo",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 35,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 50,
+    "name": "Atadura",
+    "power": 15,
+    "precision": 75,
+    "description": "Causa daño de 2 a 5 turnos. Imposibilidad de atacar al objetivo",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 51,
+    "name": "Ataque arena",
+    "power": 0,
+    "precision": 100,
+    "description": "Baja la precisión en un nivel.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 52,
+    "name": "Ataque furia",
+    "power": 15,
+    "precision": 85,
+    "description": "Causa daño de 2 a 5 turnos.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 53,
+    "name": "Ataque rápido",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 1
+  },
+  {
+    "id": 54,
+    "name": "Autodestrucción",
+    "power": 130,
+    "precision": 100,
+    "description": "Causa daño y debilita al usuario.",
+    "pp": 5,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 55,
+    "name": "Beso amoroso",
+    "power": 0,
+    "precision": 75,
+    "description": "Duerme al obejtivo",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 56,
+    "name": "Bomba huevo",
+    "power": 100,
+    "precision": 75,
+    "description": "Causa daño",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 57,
+    "name": "Bomba sónica",
+    "power": 0,
+    "precision": 90,
+    "description": "siempre quita 20 PS",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 58,
+    "name": "Cabezazo",
+    "power": 100,
+    "precision": 100,
+    "description": "Se prepara durante el primer turno y ataca en el segundo",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 59,
+    "name": "Canto",
+    "power": 0,
+    "precision": 55,
+    "description": "Duerme al objetivo.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 60,
+    "name": "Chirrido",
+    "power": 0,
+    "precision": 85,
+    "description": "Baja en dos niveles la defensa del objetivo.",
+    "pp": 40,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 61,
+    "name": "Clavo cañón",
+    "power": 20,
+    "precision": 100,
+    "description": "Causa daño de 2 a 5 turnos.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 62,
+    "name": "Conversión",
+    "power": 0,
+    "precision": 0,
+    "description": "Cambia el tipo del usuario del oponente",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 63,
+    "name": "Cornada",
+    "power": 65,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 25,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 64,
+    "name": "Corte",
+    "power": 50,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 65,
+    "name": "Cuchillada",
+    "power": 70,
+    "precision": 100,
+    "description": "Causa daño y tiene una alta probabilidad de causar un golpe crítico (12,5%).",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 66,
+    "name": "Derribo",
+    "power": 90,
+    "precision": 85,
+    "description": "Causa daño. Causa daño de retroceso al usuario de 1/4 del daño causado ",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 67,
+    "name": "Desarrollo",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumenta en un nivel el especial del usuario.",
+    "pp": 40,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 68,
+    "name": "Deslumbrar",
+    "power": 0,
+    "precision": 100,
+    "description": "Provoca paralisis al objetivo.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 69,
+    "name": "Destello",
+    "power": 0,
+    "precision": 100,
+    "description": "Baja un nivel la precisición del oponente.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 70,
+    "name": "Destructor",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 35,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 71,
+    "name": "Día de pago",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño. Se esparcen monedas que se recogen al final del combate",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 72,
+    "name": "Doble equipo",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumenta en un nivel la evasión del usuario.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 73,
+    "name": "Doble filo",
+    "power": 100,
+    "precision": 100,
+    "description": "Causa daño. Causa daño de retroceso al usuario de 1/4 del daño causado.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 74,
+    "name": "Doblebofetón",
+    "power": 15,
+    "precision": 85,
+    "description": "Causa daño de 2 a 5 turnos.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 75,
+    "name": "Explosión",
+    "power": 170,
+    "precision": 100,
+    "description": "Causa daño y debilita al usuario.",
+    "pp": 5,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 76,
+    "name": "Foco energía",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumenta la probabilidad asestar golpes criticos.",
+    "pp": 40,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 77,
+    "name": "Fortaleza",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumenta en un nivel la defensa del usuario.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 78,
+    "name": "Fuerza",
+    "power": 80,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 79,
+    "name": "Furia",
+    "power": 20,
+    "precision": 100,
+    "description": "Causa daño. No puede cambiar de movimiento.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 80,
+    "name": "Golpe",
+    "power": 90,
+    "precision": 100,
+    "description": "Causa daño entre 3 o 4 turnos seguidos. El usuario termina confundido.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 81,
+    "name": "Golpe cabeza",
+    "power": 70,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 30% de hacer retroceder.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 82,
+    "name": "Golpe cuerpo",
+    "power": 85,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 30% de paralizar el objetivo.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 83,
+    "name": "Golpe kárate",
+    "power": 50,
+    "precision": 100,
+    "description": "Causa daño y tiene un alto índice de golpe crítico.",
+    "pp": 25,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 84,
+    "name": "Golpes furia",
+    "power": 50,
+    "precision": 100,
+    "description": "Causa daño de 2 a 5 turnos.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 85,
+    "name": "Gruñido",
+    "power": 0,
+    "precision": 100,
+    "description": "Baja un nivel el ataque del objetivo.",
+    "pp": 40,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 86,
+    "name": "Guillotina",
+    "power": 0,
+    "precision": 30,
+    "description": "Si acierta, provoca KO en un turno.",
+    "pp": 5,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 87,
+    "name": "Hipercolmillo",
+    "power": 80,
+    "precision": 90,
+    "description": "Causa daño y tiene un una probabilidad del 10% de hacer retroceder al objetivo.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 88,
+    "name": "Hiperrayo",
+    "power": 150,
+    "precision": 90,
+    "description": "Causa daño. No podra moverse en el segundo turno.",
+    "pp": 5,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 89,
+    "name": "Látigo",
+    "power": 0,
+    "precision": 100,
+    "description": "Baja en un nivel la defensa del oponente.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 90,
+    "name": "Malicioso",
+    "power": 0,
+    "precision": 100,
+    "description": "Baja en un nivel la defensa del oponente.",
+    "pp": 30,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 91,
+    "name": "Megapatada",
+    "power": 120,
+    "precision": 75,
+    "description": "Causa daño.",
+    "pp": 5,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 92,
+    "name": "MegaPuño",
+    "power": 80,
+    "precision": 85,
+    "description": "Causa daño.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 93,
+    "name": "Metrónomo",
+    "power": 0,
+    "precision": 0,
+    "description": "Utiliza un movimiento al azar.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 94,
+    "name": "Mimético",
+    "power": 0,
+    "precision": 0,
+    "description": "Permite al usuario elegir uno de los movimientos del objetivo y copiarlo.",
+    "pp": 25,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 95,
+    "name": "Mordisco",
+    "power": 60,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de hacer retroceder.",
+    "pp": 25,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 96,
+    "name": "Pantalla de humo",
+    "power": 0,
+    "precision": 100,
+    "description": "Baja en un nivel la precisión del oponente.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 97,
+    "name": "Perforador",
+    "power": 0,
+    "precision": 30,
+    "description": "Si acierta, provoca KO en un turno.",
+    "pp": 5,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 98,
+    "name": "Pisotón",
+    "power": 65,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 30% de hacer retroceder.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 100,
+    "name": "Atizar",
+    "power": 80,
+    "precision": 75,
+    "description": "Causa daño.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 101,
+    "name": "Presa",
+    "power": 50,
+    "precision": 100,
+    "description": "Causa daño de 2 a 5 turnos.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 102,
+    "name": "Puño cometa",
+    "power": 18,
+    "precision": 85,
+    "description": "Causa daño de 2 a 5 turnos.",
+    "pp": 15,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 103,
+    "name": "Rapidez",
+    "power": 60,
+    "precision": 0,
+    "description": "Causa daño. No falla.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 104,
+    "name": "Recuperación",
+    "power": 0,
+    "precision": 0,
+    "description": "Restaura la mitad de los PS máximos del usuario",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 105,
+    "name": "Reducción",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumenta la evasión del usuario en un nivel.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 106,
+    "name": "Remolino",
+    "power": 0,
+    "precision": 85,
+    "description": "Ahuyenta a los pokemon salvajes.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 107,
+    "name": "Constricción",
+    "power": 15,
+    "precision": 85,
+    "description": "Causa daño de 2 a 5 turnos. Imposibilidad de atacar al objetivo",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 109,
+    "name": "Rizo de defensa",
+    "power": 0,
+    "precision": 100,
+    "description": "Aumenta en un nivel la defensa del usuario.",
+    "pp": 40,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 110,
+    "name": "Rugido",
+    "power": 0,
+    "precision": 0,
+    "description": "Ahuyenta a los pokemon salvajes.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 6
+  },
+  {
+    "id": 111,
+    "name": "Salpicadura",
+    "power": 0,
+    "precision": 0,
+    "description": "No tiene ningún efecto.",
+    "pp": 40,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 112,
+    "name": "Superdiente",
+    "power": 0,
+    "precision": 90,
+    "description": "Quita al objetivo la mitad de sus PS actuales.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 113,
+    "name": "Supersónico",
+    "power": 0,
+    "precision": 55,
+    "description": "Confunde al objetivo.",
+    "pp": 20,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 114,
+    "name": "Sustituto",
+    "power": 0,
+    "precision": 0,
+    "description": "Crea un sustituo con el 25% de los PS maximos del usuario para que reciba el daño de los movimientos",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 115,
+    "name": "Tornado",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 35,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 116,
+    "name": "Transformación",
+    "power": 0,
+    "precision": 0,
+    "description": "Convierte al usuario en el Pokémon objetivo, copiando su tipo, sus movimientos, habilidad, su ratio de captura, sus estadísticas y cambios en las mismas.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 117,
+    "name": "Triataque",
+    "power": 80,
+    "precision": 100,
+    "description": "Causa daño. Tiene un 20% de provocar quemaduras, paralisis o congelación",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 118,
+    "name": "Venganza",
+    "power": 0,
+    "precision": 0,
+    "description": " Hace que el usuario se mantenga inmóvil durante 2-3 turnos seguidos, sin poder realizar ninguna acción, para después devolver el doble del daño recibido. El movimiento falla si el usuario no resulta dañado por el enemigo.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 119,
+    "name": "Viento cortante",
+    "power": 80,
+    "precision": 75,
+    "description": "carga en el primer turno que es efectuado, creando un remolino. En el segundo turno, causa daño.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 120,
+    "name": "Absorber",
+    "power": 20,
+    "precision": 100,
+    "description": "Causa daño y el usuario recupera el 50% de los PS quitados por el movimiento al objetivo",
+    "pp": 20,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 121,
+    "name": "Danza pétalo",
+    "power": 70,
+    "precision": 100,
+    "description": "Causa daño entre 3 o 4 turnos seguidos. El usuario termina confundido.",
+    "pp": 20,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 122,
+    "name": "Drenadoras",
+    "power": 0,
+    "precision": 90,
+    "description": "Planta tres semillas en el oponente, las cuales le roban 1/16 de sus PS máximos al final de cada turno. El usuario recupera esa misma cantidad de PS. Si el usuario es cambiado, el Pokémon que pase a ocupar su lugar recibirá esos puntos de salud. El efecto se pasa al cambiar el Pokémon infectado por drenadoras. Drenadoras no afecta a Pokémon de tipo planta.",
+    "pp": 10,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 123,
+    "name": "Espora",
+    "power": 0,
+    "precision": 100,
+    "description": "Duerme al objetivo.",
+    "pp": 15,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 124,
+    "name": "Hoja afilada",
+    "power": 55,
+    "precision": 95,
+    "description": "Causa daño y tiene una alta probabilidad de dar un golpe crítico (12,5%).",
+    "pp": 25,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 125,
+    "name": "Látigo cepa",
+    "power": 35,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 25,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 126,
+    "name": "Megaagotar",
+    "power": 45,
+    "precision": 100,
+    "description": "Causa daño y el usuario recupera el 50% de los PS quitados por el movimiento al objetivo",
+    "pp": 15,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 127,
+    "name": "Paralizador",
+    "power": 0,
+    "precision": 75,
+    "description": "Paraliza al objetivo",
+    "pp": 30,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 128,
+    "name": "Rayo solar",
+    "power": 120,
+    "precision": 100,
+    "description": "utiliza este movimiento concentra la energía solar un turno, para liberar un rayo que causa daño en el siguiente turno.",
+    "pp": 10,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 129,
+    "name": "Somnífero",
+    "power": 0,
+    "precision": 75,
+    "description": "Duerme al objetivo",
+    "pp": 15,
+    "id_type": 10,
+    "priority": 0
+  },
+  {
+    "id": 130,
+    "name": "Agilidad",
+    "power": 0,
+    "precision": 0,
+    "description": "Sube en dos niveles la velocidad del usuario.",
+    "pp": 30,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 131,
+    "name": "Amnesia",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumenta en dos niveles el especial del usuario",
+    "pp": 20,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 132,
+    "name": "Barrera",
+    "power": 0,
+    "precision": 0,
+    "description": "Aumneta en dos niveles la defensa del usuario.",
+    "pp": 30,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 133,
+    "name": "Comesueños",
+    "power": 100,
+    "precision": 100,
+    "description": "Causa daño a un objetivo dormido y el usuario recupera el 50% de los PS quitados por movimiento al objetivo.",
+    "pp": 15,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 134,
+    "name": "Confusión",
+    "power": 50,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 10% de confundir al objetivo.",
+    "pp": 25,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 135,
+    "name": "Descanso",
+    "power": 0,
+    "precision": 0,
+    "description": "hace que el usuario se duerma y recupere la totalidad de los PS, curando en el proceso cualquier problema de estado. El usuario después permanece dormido durante 2 turnos.",
+    "pp": 10,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 136,
+    "name": "Hipnosis",
+    "power": 0,
+    "precision": 60,
+    "description": "Duerme al objetivo.",
+    "pp": 20,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 137,
+    "name": "Kinético",
+    "power": 0,
+    "precision": 80,
+    "description": "Baja la precisión del objetivo en un nivel.",
+    "pp": 15,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 138,
+    "name": "Meditación",
+    "power": 0,
+    "precision": 0,
+    "description": "aumenta un nivel el ataque del usuario.",
+    "pp": 40,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 139,
+    "name": "Pantalla de luz",
+    "power": 0,
+    "precision": 0,
+    "description": "Dobla la defensa especial del usuario.",
+    "pp": 30,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 140,
+    "name": "Psicoonda",
+    "power": 0,
+    "precision": 80,
+    "description": "Causa un daño variable al oponente, elegido al azar de un número entre 0,5 y 1,5 veces el nivel del usuario.",
+    "pp": 15,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 141,
+    "name": "Psicorrayo",
+    "power": 65,
+    "precision": 60,
+    "description": "Causa daño y tiene una probabilidad del 10% de confundir al objetivo.",
+    "pp": 20,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 142,
+    "name": "Psíquico",
+    "power": 90,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 30% de bajar en un nivel el especial del objetivo.",
+    "pp": 20,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 143,
+    "name": "Reflejo",
+    "power": 0,
+    "precision": 0,
+    "description": "Dobla la defensa física del usuario.",
+    "pp": 20,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 144,
+    "name": "Teletransporte",
+    "power": 0,
+    "precision": 0,
+    "description": "Permite huir de combates individuales.",
+    "pp": 20,
+    "id_type": 11,
+    "priority": 0
+  },
+  {
+    "id": 145,
+    "name": "Avalancha",
+    "power": 75,
+    "precision": 90,
+    "description": "Causa daño.",
+    "pp": 10,
+    "id_type": 12,
+    "priority": 0
+  },
+  {
+    "id": 146,
+    "name": "Lanzarocas",
+    "power": 50,
+    "precision": 65,
+    "description": "Causa daño.",
+    "pp": 15,
+    "id_type": 12,
+    "priority": 0
+  },
+  {
+    "id": 147,
+    "name": "Excavar",
+    "power": 100,
+    "precision": 100,
+    "description": "Cava en el primer turno y el segundo turno ataca.",
+    "pp": 10,
+    "id_type": 13,
+    "priority": 0
+  },
+  {
+    "id": 148,
+    "name": "Fisura",
+    "power": 0,
+    "precision": 30,
+    "description": "Si acierta, provoca un golpe fulminante.",
+    "pp": 5,
+    "id_type": 13,
+    "priority": 0
+  },
+  {
+    "id": 149,
+    "name": "Hueso palo",
+    "power": 65,
+    "precision": 85,
+    "description": "Causa daño y tiene una probabilidad del 10% de hacer retroceder al objetivo.",
+    "pp": 20,
+    "id_type": 13,
+    "priority": 0
+  },
+  {
+    "id": 150,
+    "name": "Huesomerang",
+    "power": 50,
+    "precision": 90,
+    "description": "Causa daño, golpeando al objetivo en un mismo turno.",
+    "pp": 10,
+    "id_type": 13,
+    "priority": 0
+  },
+  {
+    "id": 151,
+    "name": "Terremoto",
+    "power": 100,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 10,
+    "id_type": 13,
+    "priority": 0
+  },
+  {
+    "id": 152,
+    "name": "Ácido",
+    "power": 40,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad deñ 10% de bajar un nivel la defensa del objetivo.",
+    "pp": 30,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 153,
+    "name": "Armadura ácida",
+    "power": 0,
+    "precision": 0,
+    "description": "Sube en dos niveles la defensa del usuario.",
+    "pp": 20,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 154,
+    "name": "Gas venenoso",
+    "power": 0,
+    "precision": 55,
+    "description": "Envenena al objetivo",
+    "pp": 40,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 155,
+    "name": "Picotazo venenoso",
+    "power": 15,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 30% de envenenar al oponente.",
+    "pp": 35,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 156,
+    "name": "Polución",
+    "power": 20,
+    "precision": 70,
+    "description": "Causa daño y tiene una probabilidad del 40% de envenar al objetivo.",
+    "pp": 20,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 157,
+    "name": "Polvo veneno",
+    "power": 0,
+    "precision": 75,
+    "description": "Envenena al objetivo",
+    "pp": 35,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 158,
+    "name": "Residuos",
+    "power": 65,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 30% de envenenar al objetivo.",
+    "pp": 20,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 159,
+    "name": "Tóxico",
+    "power": 0,
+    "precision": 85,
+    "description": "provoca un grave envenenamiento que se agrava con el paso de los turnos.",
+    "pp": 10,
+    "id_type": 14,
+    "priority": 0
+  },
+  {
+    "id": 160,
+    "name": "Ataque aéreo",
+    "power": 140,
+    "precision": 90,
+    "description": "Se prepara durante el primer turno. En el segundo turno causa daño al objetivo.",
+    "pp": 5,
+    "id_type": 15,
+    "priority": 0
+  },
+  {
+    "id": 161,
+    "name": "Ataque ala",
+    "power": 35,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 35,
+    "id_type": 15,
+    "priority": 0
+  },
+  {
+    "id": 162,
+    "name": "Movimiento espejo",
+    "power": 0,
+    "precision": 0,
+    "description": "Utiliza el último ataque usado que haya tenido al usuario por objetivo. ",
+    "pp": 20,
+    "id_type": 15,
+    "priority": 0
+  },
+  {
+    "id": 164,
+    "name": "Pico taladro",
+    "power": 80,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 20,
+    "id_type": 15,
+    "priority": 0
+  },
+  {
+    "id": 165,
+    "name": "Picotazo",
+    "power": 35,
+    "precision": 100,
+    "description": "Causa daño.",
+    "pp": 35,
+    "id_type": 15,
+    "priority": 0
+  },
+  {
+    "id": 166,
+    "name": "Vuelo",
+    "power": 70,
+    "precision": 100,
+    "description": " emplea dos turnos: en el primero, el Pokémon vuela muy alto, tanto que estará fuera del alcance de la mayoría de los movimientos. En el segundo turno ocurre la caída del vuelo, en la cual el Pokémon golpea al oponente, pero puede ser interrumpida de muchas maneras.",
+    "pp": 15,
+    "id_type": 15,
+    "priority": 0
+  },
+  {
+    "id": 167,
+    "name": "Restricción",
+    "power": 10,
+    "precision": 100,
+    "description": "Restricción causa daño y tiene una probabilidad del 10% de bajar un nivel la velocidad del oponente.",
+    "pp": 35,
+    "id_type": 9,
+    "priority": 0
+  },
+  {
+    "id": 168,
+    "name": "Puño mareo",
+    "power": 70,
+    "precision": 100,
+    "description": "Causa daño y tiene una probabilidad del 20% de confundir al objetivo.",
+    "pp": 10,
+    "id_type": 9,
+    "priority": 0
+  }
+]

@@ -1,74 +1,77 @@
 [
   {
     "id": 1,
-    "description": "Normal"
+    "name": "Agua",
+    "id_type_attack": 2
   },
   {
     "id": 2,
-    "description": "Fighting"
+    "name": "Bicho",
+    "id_type_attack": 1
   },
   {
     "id": 3,
-    "description": "Flying"
+    "name": "Dragón",
+    "id_type_attack": 2
   },
   {
     "id": 4,
-    "description": "Poison"
+    "name": "Eléctrico",
+    "id_type_attack": 2
   },
   {
     "id": 5,
-    "description": "Ground"
+    "name": "Fantasma",
+    "id_type_attack": 1
   },
   {
     "id": 6,
-    "description": "Rock"
+    "name": "Fuego",
+    "id_type_attack": 2
   },
   {
     "id": 7,
-    "description": "Bug"
+    "name": "Hielo",
+    "id_type_attack": 2
   },
   {
     "id": 8,
-    "description": "Ghost"
+    "name": "Lucha",
+    "id_type_attack": 1
   },
   {
     "id": 9,
-    "description": "Steel"
+    "name": "Normal",
+    "id_type_attack": 1
   },
   {
     "id": 10,
-    "description": "Fire"
+    "name": "Planta",
+    "id_type_attack": 2
   },
   {
     "id": 11,
-    "description": "Water"
+    "name": "Psíquico",
+    "id_type_attack": 2
   },
   {
     "id": 12,
-    "description": "Grass"
+    "name": "Roca",
+    "id_type_attack": 1
   },
   {
     "id": 13,
-    "description": "Electric"
+    "name": "Tierra",
+    "id_type_attack": 1
   },
   {
     "id": 14,
-    "description": "Psychic"
+    "name": "Veneno",
+    "id_type_attack": 1
   },
   {
     "id": 15,
-    "description": "Ice"
-  },
-  {
-    "id": 16,
-    "description": "Dragon"
-  },
-  {
-    "id": 17,
-    "description": "Dark"
-  },
-  {
-    "id": 18,
-    "description": "Fairy"
+    "name": "Volador",
+    "id_type_attack": 1
   }
 ]
