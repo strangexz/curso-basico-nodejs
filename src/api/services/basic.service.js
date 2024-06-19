@@ -6,13 +6,48 @@
  *
  * @returns {JSON} objeto JSON con los datos a devolver
  */
-const getOperations = () => {
+const getOperations = (methods) => {
   try {
-    console.log('Entrando al método getOperations...');
+    console.log('Inicio servicio getOperations');
 
-    const data = require('../../data/data.json');
+    const operations = require('../../data/data.json');
+    let data;
 
-    console.log('Devolviendo respuesta...');
+    if (methods.length > 0) {
+      data = {};
+      for (const method of methods) {
+        data[method] = operations[method];
+      }
+    } else {
+      data = operations;
+    }
+
+    console.log(data);
+    console.log('Fin servicio getOperations');
+
+    return { isOk: true, data, error: null };
+  } catch (e) {
+    console.error('=>', e);
+    return { isOk: false, data: null, error: e.message };
+  }
+};
+
+/**
+ *
+ * @param {*} method
+ * @returns
+ */
+const getOperation = (method) => {
+  try {
+    console.log('Inicio servicio getOperation');
+
+    const operations = require('../../data/data.json');
+
+    const data = {};
+    data[method] = operations[method];
+
+    console.log(data);
+    console.log('Fin servicio getOperation');
 
     return { isOk: true, data, error: null };
   } catch (e) {
@@ -33,11 +68,11 @@ const getOperations = () => {
  */
 const postAddition = (number1, number2) => {
   try {
-    console.log('Entrando al servicio postAddittion...');
+    console.log('Inicio servicio postAddition');
 
     const total = number1 + number2;
 
-    console.log('Saliendo del servicio postAddition.');
+    console.log('Fin servicio postAddition');
 
     return { isOk: true, data: { number1, number2, total }, error: null };
   } catch (e) {
@@ -58,38 +93,51 @@ const postAddition = (number1, number2) => {
  */
 const putMultiply = (number1, number2) => {
   try {
-    console.log('Entrando al servicio putMultiply...');
+    console.log('Inicio servicio putMultiply');
 
     const product = number1 * number2;
 
-    console.log('Saliendo del servicio putMultiply.');
+    console.log('Fin servicio putMultiply');
 
     return { isOk: true, data: { number1, number2, product }, error: null };
   } catch (e) {
     console.error('=>', e);
     return { isOk: false, data: null, error: e.message };
   }
-}
+};
 
-
-const deleteDivision = (number1, number2) => {
+/**
+ * Divide 2 números
+ *
+ * Método que tiene como función dividir 2 números y devolver
+ * el cociente
+ *
+ * @param {Number} number1 - Dividendo
+ * @param {Number} number2 - Divisor
+ * @param {Boolean} getRemainder - necesita el residuo en la respuesta?
+ * @returns el cociente de la división de los números
+ */
+const deleteDivision = (number1, number2, getRemainder) => {
   try {
-    console.log('Entrando al servicio deleteDivision...');
+    console.log('Inicio servicio deleteDivision');
+
+    let remainder;
 
     const quotient = number1 / number2;
 
-    console.log('Saliendo del servicio deleteDivision.');
+    console.log('Fin servicio deleteDivision');
 
     return { isOk: true, data: { number1, number2, quotient }, error: null };
   } catch (e) {
     console.error('=>', e);
     return { isOk: false, data: null, error: e.message };
   }
-}
+};
 
 module.exports = {
   getOperations,
+  getOperation,
   postAddition,
   putMultiply,
-  deleteDivision
+  deleteDivision,
 };
