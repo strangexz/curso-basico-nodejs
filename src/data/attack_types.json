@@ -1,0 +1,10 @@
+[
+  {
+    "id_type_attack": 1,
+    "type": "Físico"
+  },
+  {
+    "id_type_attack": 2,
+    "type": "Especial"
+  }
+]
