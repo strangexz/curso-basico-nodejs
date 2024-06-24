@@ -1,0 +1,74 @@
+[
+  {
+    "id_pokemon": 1,
+    "id_type": 10
+  },
+  {
+    "id_pokemon": 1,
+    "id_type": 14
+  }, {
+    "id_pokemon": 2,
+    "id_type": 10
+  },
+  {
+    "id_pokemon": 2,
+    "id_type": 14
+  },
+  {
+    "id_pokemon": 3,
+    "id_type": 10
+  },
+  {
+    "id_pokemon": 3,
+    "id_type": 14
+  },{
+    "id_pokemon": 6,
+    "id_type": 6
+  },
+  {
+    "id_pokemon": 6,
+    "id_type": 15
+  },
+  {
+    "id_pokemon": 7,
+    "id_type": 1
+  },
+  {
+    "id_pokemon": 8,
+    "id_type": 1
+  },{
+    "id_pokemon": 9,
+    "id_type": 1
+  }, {
+    "id_pokemon": 12,
+    "id_type": 2
+  },
+  {
+    "id_pokemon": 12,
+    "id_type": 15
+  },
+  {
+    "id_pokemon": 25,
+    "id_type": 4
+  },
+  {
+    "id_pokemon": 59,
+    "id_type": 6
+  },
+  {
+    "id_pokemon": 89,
+    "id_type": 14
+  },
+  {
+    "id_pokemon": 115,
+    "id_type": 9
+  },
+  {
+    "id_pokemon": 125,
+    "id_type": 4
+  },
+  {
+    "id_pokemon": 133,
+    "id_type": 9
+  }
+]
