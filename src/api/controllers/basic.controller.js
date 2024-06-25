@@ -12,8 +12,6 @@ const { StatusCodes } = require('http-status-codes');
 const BasicService = require('../services/basic.service');
 
 /**
- * Obtención de operaciones
- *
  * Método que tiene como función devolver los datos de un
  * archivo JSON
  *
@@ -81,8 +79,6 @@ const getOperations = (req, res) => {
 };
 
 /**
- * Obtención de una operación específica
- *
  * Método que tiene como función devolver un dato en específico
  *
  * @param {Request} req - objeto de solicitud http
@@ -128,8 +124,6 @@ const getOperation = (req, res) => {
 };
 
 /**
- * Suma de 2 números
- *
  * Método que tiene la función de recibir 2 números, sumarlos
  * y devolver el total de esa suma.
  *
@@ -191,8 +185,6 @@ const postAddition = (req, res) => {
 };
 
 /**
- * Multiplica 2 números
- *
  * Método que tiene la función de recibir 2 números, multiplicarlos
  * y devolver el producto de ello.
  *
@@ -254,8 +246,6 @@ const putMultiply = (req, res) => {
 };
 
 /**
- * Divide 2 números
- *
  * Método que tiene la función de recibir 2 números, dividirlos
  * y devolver el cociente de la operación.
  *
