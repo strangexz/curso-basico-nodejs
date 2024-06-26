@@ -1,10 +1,19 @@
 const express = require('express');
-const AttackTypesController = require('../controllers/attackTypes.controller');
+const {
+  getAttackTypeById,
+  getAttackTypes,
+  recordNewAttackType,
+  updateAttackType,
+  deleteAttackType
+} = require('../controllers/attackTypes.controller');
 
 const endpoints = express.Router();
 
 // Definición de rutas
-endpoints.get('/attackTypes/getAllAttackTypes', AttackTypesController.getAttackTypes);
-endpoints.get('/attackTypes/getOneAttackType/:id', AttackTypesController.getAttackType);
+endpoints.get('/attackTypes/getAllAttackTypes', getAttackTypes);
+endpoints.get('/attackTypes/getOneAttackType/:id', getAttackTypeById);
+endpoints.post('/attackTypes/recordNewAttackType', recordNewAttackType);
+endpoints.put('/attackTypes/updateAttackType/:id', updateAttackType);
+endpoints.delete('/attackTypes/deleteAttackType', deleteAttackType);
 
 module.exports = endpoints;
