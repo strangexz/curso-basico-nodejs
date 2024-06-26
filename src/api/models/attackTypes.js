@@ -1,12 +1,18 @@
+const { snakeCaseMappers } = require('objection');
 const BaseModel = require('../config/model');
 
 class AttackTypes extends BaseModel {
+  /* Convierte los nombres de las columnas de CAMEL CASE a SNAKE CASE */
+  static get columnNameMappers() {
+    return snakeCaseMappers();
+  }
+
   /* El nombre de la tabla es la única propiedad requerida */
-  static get tableName(){
+  static get tableName() {
     return 'attack_types';
   }
 
-  static get idColumn(){
+  static get idColumn() {
     return 'id';
   }
 
