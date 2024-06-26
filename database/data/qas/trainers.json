@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Ash",
+    "is_deleted": false
+  },
+  {
+    "id": 2,
+    "name": "Gary",
+    "is_deleted": false
+  },
+  {
+    "id": 3,
+    "name": "Brook",
+    "is_deleted": false
+  },
+  {
+    "id": 4,
+    "name": "Misty",
+    "is_deleted": false
+  },
+  {
+    "id": 5,
+    "name": "Lt. Surge",
+    "is_deleted": false
+  },
+  {
+    "id": 6,
+    "name": "Erika",
+    "is_deleted": false
+  },
+  {
+    "id": 7,
+    "name": "Koga",
+    "is_deleted": false
+  },
+  {
+    "id": 8,
+    "name": "Blaine",
+    "is_deleted": false
+  },
+  {
+    "id": 9,
+    "name": "Giovanni",
+    "is_deleted": false
+  },
+  {
+    "id": 10,
+    "name": "Lorelei",
+    "is_deleted": false
+  },
+  {
+    "id": 11,
+    "name": "Bruno",
+    "is_deleted": false
+  },
+  {
+    "id": 12,
+    "name": "Agatha",
+    "is_deleted": false
+  },
+  {
+    "id": 13,
+    "name": "Lance",
+    "is_deleted": false
+  }
+]

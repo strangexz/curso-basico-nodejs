@@ -1,0 +1,46 @@
+[
+  {
+    "id_trainer": 1,
+    "id_pokemon": 25
+  },
+  {
+    "id_trainer": 1,
+    "id_pokemon": 97
+  },
+  {
+    "id_trainer": 1,
+    "id_pokemon": 3
+  },
+  {
+    "id_trainer": 1,
+    "id_pokemon": 6
+  },
+  {
+    "id_trainer": 1,
+    "id_pokemon": 9
+  },
+  {
+    "id_trainer": 2,
+    "id_pokemon": 18
+  },
+  {
+    "id_trainer": 2,
+    "id_pokemon": 65
+  },
+  {
+    "id_trainer": 2,
+    "id_pokemon": 103
+  },
+  {
+    "id_trainer": 2,
+    "id_pokemon": 112
+  },
+  {
+    "id_trainer": 2,
+    "id_pokemon": 9
+  },
+  {
+    "id_trainer": 3,
+    "id_pokemon": 125
+  }
+]

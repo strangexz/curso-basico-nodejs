@@ -17,16 +17,12 @@ if (enviroment.error) {
 const port = process.env.PORT_SERVER;
 const message = `Hola mundo!!! El API REST en Node JS arrancó en el puerto: ${port}`;
 
-/* Configurando cuerpo de la solicitud */
+/* Configurando rcuerpo de la solicitud */
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 /* Cargar rutas */
 const apiRoutes = require('./api/routes');
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './views/index.html'));
-});
 
 /* Implementando rutas */
 app.use('/nodeCourse', router, apiRoutes);

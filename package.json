@@ -4,6 +4,11 @@
   "description": "Curso basico de NodeJS",
   "main": "src/index.js",
   "scripts": {
+    "db:migrate-dev": "npx knex migrate:latest --env development",
+    "db:rollback-dev": "npx knex migrate:rollback --env development",
+    "db:seed-dev": "cross-env NODE_ENV=development npx knex seed:run --env development",
+    "db:setup-dev": "cross-env NODE_ENV=development npm run db:migrate-dev && npm run db:seed-dev",
+    "db:reset-dev": "cross-env NODE_ENV=development npm run db:rollback-dev && npm run db:setup-dev",
     "lint": "npx eslint --max-warnings=0 --report-unused-disable-directives && echo '✔  Your js files look good'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
@@ -30,7 +35,10 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "http-status-codes": "^2.3.0",
+    "knex": "^3.1.0",
     "nodemon": "^3.1.2",
+    "objection": "^3.1.4",
+    "sqlite3": "^5.1.7",
     "underscore": "^1.13.6",
     "validator": "^13.12.0"
   },

@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "type": "Físico",
+    "is_deleted": false
+  },
+  {
+    "id": 2,
+    "type": "Especial",
+    "is_deleted": false
+  }
+]
