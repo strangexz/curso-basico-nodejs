@@ -8,6 +8,7 @@ exports.up = function(knex) {
     table.increments('id');
     table.string('name', 64);
     table.string('description');
+    table.boolean('is_deleted');
     table.timestamps(true, true);
   });
 };

@@ -15,6 +15,7 @@ exports.up = function (knex) {
     table.integer('height');
     table.integer('weight');
     table.integer('special');
+    table.boolean('is_deleted');
     table.timestamps(true, true);
   });
 };

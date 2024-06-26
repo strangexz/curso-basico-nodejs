@@ -11,6 +11,7 @@ exports.up = function(knex) {
     table.string('name', 64);
     table.integer('id_attack_type').unsigned();
     table.foreign('id_attack_type').references('id').inTable(foreignTableName);
+    table.boolean('is_deleted');
     table.timestamps(true, true);
   });
 };

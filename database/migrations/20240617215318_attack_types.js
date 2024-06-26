@@ -8,6 +8,7 @@ exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
     table.increments('id');
     table.string('type', 64);
+    table.boolean('is_deleted');
     table.timestamps(true, true);
   });
 };
