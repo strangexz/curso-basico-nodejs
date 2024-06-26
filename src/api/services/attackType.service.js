@@ -18,7 +18,7 @@ const getAttackTypesService = async () => {
   try {
     console.log('Inicio servicio getAttackTypesService');
 
-    const data = await AttackTypes.query().where('isDeleted', false);
+    const data = await AttackTypes.query().select('id', 'type', 'created_at', 'updated_at').where('is_deleted', false);
 
     console.log(data);
     console.log('Fin servicio getAttackTypesService');
@@ -47,13 +47,16 @@ const getOneAttackTypeByIdService = async (id) => {
   try {
     console.log('Inicio servicio getOneAttackTypeByIdService');
 
-    const data = await AttackTypes.query().findById(id).where('isDeleted', false);
+    const data = await AttackTypes.query()
+      .select('id', 'type', 'created_at', 'updated_at')
+      .findById(id)
+      .where('is_deleted', false);
 
     console.log(data);
     console.log('Fin servicio getOneAttackTypeByIdService');
 
     if (_.isUndefined(data)) {
-      return { isOk: true, data: {}, error: null };
+      return { isOk: false, data: {}, error: 'No se encontró el registro' };
     } else {
       return { isOk: true, data, error: null };
     }
@@ -79,10 +82,10 @@ const getOneAttackTypeByNameService = async (name) => {
   try {
     console.log('Inicio servicio getOneAttackTypeByNameService');
 
-    const data = await AttackTypes.query().where('type', name);
+    const data = await AttackTypes.query().select('id', 'type', 'created_at', 'updated_at').where('type', name);
 
     console.log(data);
-    console.log('Fin servicio getOneAttackTypeByNameService').where('isDeleted', false);
+    console.log('Fin servicio getOneAttackTypeByNameService').where('is_deleted', false);
 
     if (_.isUndefined(data)) {
       return { isOk: true, data: {}, error: null };
@@ -187,7 +190,7 @@ const deleteAttackTypeService = async () => {
   } catch (e) {
     return { isOk: false, data: null, error: e.message };
   }
-}
+};
 
 module.exports = {
   getAttackTypesService,
@@ -195,5 +198,5 @@ module.exports = {
   getOneAttackTypeByNameService,
   recordNewAttackTypeService,
   updateAttackTypeService,
-  deleteAttackTypeService
+  deleteAttackTypeService,
 };
