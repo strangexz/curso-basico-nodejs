@@ -1,10 +1,12 @@
 [
   {
     "id_type": 1,
-    "type": "Físico"
+    "type": "Físico",
+    "is_deleted": false
   },
   {
     "id_type": 2,
-    "type": "Especial"
+    "type": "Especial",
+    "is_deleted": false
   }
 ]

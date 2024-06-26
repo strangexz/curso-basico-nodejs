@@ -2,76 +2,91 @@
   {
     "id": 1,
     "name": "Agua",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 2,
     "name": "Bicho",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 3,
     "name": "Dragón",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 4,
     "name": "Eléctrico",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 5,
     "name": "Fantasma",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 6,
     "name": "Fuego",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 7,
     "name": "Hielo",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 8,
     "name": "Lucha",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 9,
     "name": "Normal",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 10,
     "name": "Planta",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 11,
     "name": "Psíquico",
-    "id_attack_type": 2
+    "id_attack_type": 2,
+    "is_deleted": false
   },
   {
     "id": 12,
     "name": "Roca",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 13,
     "name": "Tierra",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 14,
     "name": "Veneno",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   },
   {
     "id": 15,
     "name": "Volador",
-    "id_attack_type": 1
+    "id_attack_type": 1,
+    "is_deleted": false
   }
 ]

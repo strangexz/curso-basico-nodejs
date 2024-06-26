@@ -7,7 +7,8 @@
     "description": "Causa daño",
     "pp": 35,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "description": "Aumenta en dos niveles el ataque del usuario",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 3,
@@ -27,7 +29,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de bajar la velocidad",
     "pp": 30,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 4,
@@ -37,7 +40,8 @@
     "description": "Causa daño",
     "pp": 15,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 5,
@@ -47,7 +51,8 @@
     "description": "Causa daño",
     "pp": 5,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 6,
@@ -57,7 +62,8 @@
     "description": "Causa daño con probabilidad de dar golpe critico(12,5%)",
     "pp": 10,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 7,
@@ -67,7 +73,8 @@
     "description": "Causa daño",
     "pp": 25,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 8,
@@ -77,7 +84,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de bajar la velocidad",
     "pp": 20,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 9,
@@ -87,7 +95,8 @@
     "description": "Aumenta la defensa en un nivel",
     "pp": 40,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 10,
@@ -97,7 +106,8 @@
     "description": "Causa daño",
     "pp": 15,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 11,
@@ -107,7 +117,8 @@
     "description": "Causa daño durante 2-5 turnos. Imposibilidad de atacar al objetivo",
     "pp": 15,
     "id_type": 1,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 12,
@@ -117,7 +128,8 @@
     "description": "Causa daño y recupera el 50% PS quitados",
     "pp": 15,
     "id_type": 2,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 13,
@@ -127,7 +139,8 @@
     "description": "Baja la velocidad del objetivo",
     "pp": 40,
     "id_type": 2,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 14,
@@ -137,7 +150,8 @@
     "description": "Causa daño golpeando dos veces. Cada golpe tiene un 20% de probabilidad de envenenar.",
     "pp": 20,
     "id_type": 2,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 15,
@@ -147,7 +161,8 @@
     "description": "Causa daño al objetivo de 2 a 5 veces",
     "pp": 20,
     "id_type": 2,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 16,
@@ -157,7 +172,8 @@
     "description": "Quita siempre 40 PS al obejtivo",
     "pp": 10,
     "id_type": 3,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 17,
@@ -167,7 +183,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de paralizar el objetivo.",
     "pp": 30,
     "id_type": 4,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 18,
@@ -177,7 +194,8 @@
     "description": "Paraliza el objetivo",
     "pp": 20,
     "id_type": 4,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 19,
@@ -187,7 +205,8 @@
     "description": "Causa daño y tiene un 10% de paralizar el objetivo",
     "pp": 35,
     "id_type": 4,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 20,
@@ -197,7 +216,8 @@
     "description": "Causa daño y tiene un 10% de paralizar el objetivo",
     "pp": 15,
     "id_type": 4,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 21,
@@ -207,7 +227,8 @@
     "description": "Causa daño y tiene un 10% de paralizar el objetivo",
     "pp": 10,
     "id_type": 4,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 23,
@@ -217,7 +238,8 @@
     "description": "Causa daño y tiene un 30% de paralizar el objetivo",
     "pp": 30,
     "id_type": 5,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 24,
@@ -227,7 +249,8 @@
     "description": "Confunde al objetivo",
     "pp": 10,
     "id_type": 5,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 25,
@@ -237,7 +260,8 @@
     "description": "Resta la cantidad de PS equivalentes al nivel de usuario",
     "pp": 15,
     "id_type": 5,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 26,
@@ -247,7 +271,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de quemar al objetivo",
     "pp": 25,
     "id_type": 6,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 27,
@@ -257,7 +282,8 @@
     "description": "Causa dañó de 2 a 5 turnos. Imposibilidad de atacar al objetivo",
     "pp": 15,
     "id_type": 6,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 28,
@@ -267,7 +293,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de quemar al objetivo",
     "pp": 15,
     "id_type": 6,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 29,
@@ -277,7 +304,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de quemar al objetivo",
     "pp": 5,
     "id_type": 6,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 30,
@@ -287,7 +315,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de quemar al objetivo",
     "pp": 15,
     "id_type": 4,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 31,
@@ -297,7 +326,8 @@
     "description": "Neblina evita durante 5 turnos otros pokemon puedan reducir las estadisiticas del equipo aliado",
     "pp": 30,
     "id_type": 7,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 32,
@@ -307,7 +337,8 @@
     "description": "Restaura todos los cambios, tantos positivos como negativos, en las estadisitcas de todos los pokemon.",
     "pp": 30,
     "id_type": 7,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 33,
@@ -317,7 +348,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de congelar al objetivo",
     "pp": 15,
     "id_type": 7,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 34,
@@ -327,7 +359,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de bajar un nivel el ataque del objetivo",
     "pp": 20,
     "id_type": 7,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 35,
@@ -337,7 +370,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de congelar al objetivo",
     "pp": 10,
     "id_type": 7,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 36,
@@ -347,7 +381,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de congelar al objetivo",
     "pp": 5,
     "id_type": 7,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 37,
@@ -357,7 +392,8 @@
     "description": "Devuelve el doble daño recibido si es un físico",
     "pp": 20,
     "id_type": 8,
-    "priority": 5
+    "priority": 5,
+    "is_deleted": false
   },
   {
     "id": 38,
@@ -367,7 +403,8 @@
     "description": "Causa daño, golpeando 2 veces en un mismo turno",
     "pp": 30,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 39,
@@ -377,7 +414,8 @@
     "description": "Resta la cantidad de PS equivalentes al nivel de usuario",
     "pp": 20,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 40,
@@ -387,7 +425,8 @@
     "description": "Causa daño y tiene del 30% de retroceder al objetivo",
     "pp": 20,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 41,
@@ -397,7 +436,8 @@
     "description": "Causa daño y tiene del 30% de retroceder al objetivo",
     "pp": 15,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 42,
@@ -407,7 +447,8 @@
     "description": "Causa daño. Si falla, el usuario se golpea a si mismo restandole 1 PS.",
     "pp": 25,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 43,
@@ -417,7 +458,8 @@
     "description": "Causa daño. Si falla, el usuario se golpea a si mismo restandole 1 PS.",
     "pp": 20,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 44,
@@ -427,7 +469,8 @@
     "description": "Causa daño. Causa daño de retroceso al usuario de 1/4 del daño causado.",
     "pp": 20,
     "id_type": 8,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 45,
@@ -437,7 +480,8 @@
     "description": "sube el ataque del usuario en un nivel",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 46,
@@ -447,7 +491,8 @@
     "description": "Causa daño.",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 47,
@@ -457,7 +502,8 @@
     "description": "Restaura la mitad de los PS máximos del usuario",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 48,
@@ -467,7 +513,8 @@
     "description": "Anula un movimiento del objetivo",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 49,
@@ -477,7 +524,8 @@
     "description": "Causa daño.",
     "pp": 35,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 50,
@@ -487,7 +535,8 @@
     "description": "Causa daño de 2 a 5 turnos. Imposibilidad de atacar al objetivo",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 51,
@@ -497,7 +546,8 @@
     "description": "Baja la precisión en un nivel.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 52,
@@ -507,7 +557,8 @@
     "description": "Causa daño de 2 a 5 turnos.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 53,
@@ -517,7 +568,8 @@
     "description": "Causa daño.",
     "pp": 30,
     "id_type": 9,
-    "priority": 1
+    "priority": 1,
+    "is_deleted": false
   },
   {
     "id": 54,
@@ -527,7 +579,8 @@
     "description": "Causa daño y debilita al usuario.",
     "pp": 5,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 55,
@@ -537,7 +590,8 @@
     "description": "Duerme al obejtivo",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 56,
@@ -547,7 +601,8 @@
     "description": "Causa daño",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 57,
@@ -557,7 +612,8 @@
     "description": "siempre quita 20 PS",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 58,
@@ -567,7 +623,8 @@
     "description": "Se prepara durante el primer turno y ataca en el segundo",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 59,
@@ -577,7 +634,8 @@
     "description": "Duerme al objetivo.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 60,
@@ -587,7 +645,8 @@
     "description": "Baja en dos niveles la defensa del objetivo.",
     "pp": 40,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 61,
@@ -597,7 +656,8 @@
     "description": "Causa daño de 2 a 5 turnos.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 62,
@@ -607,7 +667,8 @@
     "description": "Cambia el tipo del usuario del oponente",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 63,
@@ -617,7 +678,8 @@
     "description": "Causa daño.",
     "pp": 25,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 64,
@@ -627,7 +689,8 @@
     "description": "Causa daño.",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 65,
@@ -637,7 +700,8 @@
     "description": "Causa daño y tiene una alta probabilidad de causar un golpe crítico (12,5%).",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 66,
@@ -647,7 +711,8 @@
     "description": "Causa daño. Causa daño de retroceso al usuario de 1/4 del daño causado ",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 67,
@@ -657,7 +722,8 @@
     "description": "Aumenta en un nivel el especial del usuario.",
     "pp": 40,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 68,
@@ -667,7 +733,8 @@
     "description": "Provoca paralisis al objetivo.",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 69,
@@ -677,7 +744,8 @@
     "description": "Baja un nivel la precisición del oponente.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 70,
@@ -687,7 +755,8 @@
     "description": "Causa daño.",
     "pp": 35,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 71,
@@ -697,7 +766,8 @@
     "description": "Causa daño. Se esparcen monedas que se recogen al final del combate",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 72,
@@ -707,7 +777,8 @@
     "description": "Aumenta en un nivel la evasión del usuario.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 73,
@@ -717,7 +788,8 @@
     "description": "Causa daño. Causa daño de retroceso al usuario de 1/4 del daño causado.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 74,
@@ -727,7 +799,8 @@
     "description": "Causa daño de 2 a 5 turnos.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 75,
@@ -737,7 +810,8 @@
     "description": "Causa daño y debilita al usuario.",
     "pp": 5,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 76,
@@ -747,7 +821,8 @@
     "description": "Aumenta la probabilidad asestar golpes criticos.",
     "pp": 40,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 77,
@@ -757,7 +832,8 @@
     "description": "Aumenta en un nivel la defensa del usuario.",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 78,
@@ -767,7 +843,8 @@
     "description": "Causa daño.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 79,
@@ -777,7 +854,8 @@
     "description": "Causa daño. No puede cambiar de movimiento.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 80,
@@ -787,7 +865,8 @@
     "description": "Causa daño entre 3 o 4 turnos seguidos. El usuario termina confundido.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 81,
@@ -797,7 +876,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de hacer retroceder.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 82,
@@ -807,7 +887,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de paralizar el objetivo.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 83,
@@ -817,7 +898,8 @@
     "description": "Causa daño y tiene un alto índice de golpe crítico.",
     "pp": 25,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 84,
@@ -827,7 +909,8 @@
     "description": "Causa daño de 2 a 5 turnos.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 85,
@@ -837,7 +920,8 @@
     "description": "Baja un nivel el ataque del objetivo.",
     "pp": 40,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 86,
@@ -847,7 +931,8 @@
     "description": "Si acierta, provoca KO en un turno.",
     "pp": 5,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 87,
@@ -857,7 +942,8 @@
     "description": "Causa daño y tiene un una probabilidad del 10% de hacer retroceder al objetivo.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 88,
@@ -867,7 +953,8 @@
     "description": "Causa daño. No podra moverse en el segundo turno.",
     "pp": 5,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 89,
@@ -877,7 +964,8 @@
     "description": "Baja en un nivel la defensa del oponente.",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 90,
@@ -887,7 +975,8 @@
     "description": "Baja en un nivel la defensa del oponente.",
     "pp": 30,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 91,
@@ -897,7 +986,8 @@
     "description": "Causa daño.",
     "pp": 5,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 92,
@@ -907,7 +997,8 @@
     "description": "Causa daño.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 93,
@@ -917,7 +1008,8 @@
     "description": "Utiliza un movimiento al azar.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 94,
@@ -927,7 +1019,8 @@
     "description": "Permite al usuario elegir uno de los movimientos del objetivo y copiarlo.",
     "pp": 25,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 95,
@@ -937,7 +1030,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de hacer retroceder.",
     "pp": 25,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 96,
@@ -947,7 +1041,8 @@
     "description": "Baja en un nivel la precisión del oponente.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 97,
@@ -957,7 +1052,8 @@
     "description": "Si acierta, provoca KO en un turno.",
     "pp": 5,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 98,
@@ -967,7 +1063,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de hacer retroceder.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 100,
@@ -977,7 +1074,8 @@
     "description": "Causa daño.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 101,
@@ -987,7 +1085,8 @@
     "description": "Causa daño de 2 a 5 turnos.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 102,
@@ -997,7 +1096,8 @@
     "description": "Causa daño de 2 a 5 turnos.",
     "pp": 15,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 103,
@@ -1007,7 +1107,8 @@
     "description": "Causa daño. No falla.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 104,
@@ -1017,7 +1118,8 @@
     "description": "Restaura la mitad de los PS máximos del usuario",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 105,
@@ -1027,7 +1129,8 @@
     "description": "Aumenta la evasión del usuario en un nivel.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 106,
@@ -1037,7 +1140,8 @@
     "description": "Ahuyenta a los pokemon salvajes.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 107,
@@ -1047,7 +1151,8 @@
     "description": "Causa daño de 2 a 5 turnos. Imposibilidad de atacar al objetivo",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 109,
@@ -1057,7 +1162,8 @@
     "description": "Aumenta en un nivel la defensa del usuario.",
     "pp": 40,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 110,
@@ -1067,7 +1173,8 @@
     "description": "Ahuyenta a los pokemon salvajes.",
     "pp": 20,
     "id_type": 9,
-    "priority": 6
+    "priority": 6,
+    "is_deleted": false
   },
   {
     "id": 111,
@@ -1077,7 +1184,8 @@
     "description": "No tiene ningún efecto.",
     "pp": 40,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 112,
@@ -1087,7 +1195,8 @@
     "description": "Quita al objetivo la mitad de sus PS actuales.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 113,
@@ -1097,7 +1206,8 @@
     "description": "Confunde al objetivo.",
     "pp": 20,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 114,
@@ -1107,7 +1217,8 @@
     "description": "Crea un sustituo con el 25% de los PS maximos del usuario para que reciba el daño de los movimientos",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 115,
@@ -1117,7 +1228,8 @@
     "description": "Causa daño.",
     "pp": 35,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 116,
@@ -1127,7 +1239,8 @@
     "description": "Convierte al usuario en el Pokémon objetivo, copiando su tipo, sus movimientos, habilidad, su ratio de captura, sus estadísticas y cambios en las mismas.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 117,
@@ -1137,7 +1250,8 @@
     "description": "Causa daño. Tiene un 20% de provocar quemaduras, paralisis o congelación",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 118,
@@ -1147,7 +1261,8 @@
     "description": " Hace que el usuario se mantenga inmóvil durante 2-3 turnos seguidos, sin poder realizar ninguna acción, para después devolver el doble del daño recibido. El movimiento falla si el usuario no resulta dañado por el enemigo.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 119,
@@ -1157,7 +1272,8 @@
     "description": "carga en el primer turno que es efectuado, creando un remolino. En el segundo turno, causa daño.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 120,
@@ -1167,7 +1283,8 @@
     "description": "Causa daño y el usuario recupera el 50% de los PS quitados por el movimiento al objetivo",
     "pp": 20,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 121,
@@ -1177,7 +1294,8 @@
     "description": "Causa daño entre 3 o 4 turnos seguidos. El usuario termina confundido.",
     "pp": 20,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 122,
@@ -1187,7 +1305,8 @@
     "description": "Planta tres semillas en el oponente, las cuales le roban 1/16 de sus PS máximos al final de cada turno. El usuario recupera esa misma cantidad de PS. Si el usuario es cambiado, el Pokémon que pase a ocupar su lugar recibirá esos puntos de salud. El efecto se pasa al cambiar el Pokémon infectado por drenadoras. Drenadoras no afecta a Pokémon de tipo planta.",
     "pp": 10,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 123,
@@ -1197,7 +1316,8 @@
     "description": "Duerme al objetivo.",
     "pp": 15,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 124,
@@ -1207,7 +1327,8 @@
     "description": "Causa daño y tiene una alta probabilidad de dar un golpe crítico (12,5%).",
     "pp": 25,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 125,
@@ -1217,7 +1338,8 @@
     "description": "Causa daño.",
     "pp": 25,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 126,
@@ -1227,7 +1349,8 @@
     "description": "Causa daño y el usuario recupera el 50% de los PS quitados por el movimiento al objetivo",
     "pp": 15,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 127,
@@ -1237,7 +1360,8 @@
     "description": "Paraliza al objetivo",
     "pp": 30,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 128,
@@ -1247,7 +1371,8 @@
     "description": "utiliza este movimiento concentra la energía solar un turno, para liberar un rayo que causa daño en el siguiente turno.",
     "pp": 10,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 129,
@@ -1257,7 +1382,8 @@
     "description": "Duerme al objetivo",
     "pp": 15,
     "id_type": 10,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 130,
@@ -1267,7 +1393,8 @@
     "description": "Sube en dos niveles la velocidad del usuario.",
     "pp": 30,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 131,
@@ -1277,7 +1404,8 @@
     "description": "Aumenta en dos niveles el especial del usuario",
     "pp": 20,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 132,
@@ -1287,7 +1415,8 @@
     "description": "Aumneta en dos niveles la defensa del usuario.",
     "pp": 30,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 133,
@@ -1297,7 +1426,8 @@
     "description": "Causa daño a un objetivo dormido y el usuario recupera el 50% de los PS quitados por movimiento al objetivo.",
     "pp": 15,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 134,
@@ -1307,7 +1437,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de confundir al objetivo.",
     "pp": 25,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 135,
@@ -1317,7 +1448,8 @@
     "description": "hace que el usuario se duerma y recupere la totalidad de los PS, curando en el proceso cualquier problema de estado. El usuario después permanece dormido durante 2 turnos.",
     "pp": 10,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 136,
@@ -1327,7 +1459,8 @@
     "description": "Duerme al objetivo.",
     "pp": 20,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 137,
@@ -1337,7 +1470,8 @@
     "description": "Baja la precisión del objetivo en un nivel.",
     "pp": 15,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 138,
@@ -1347,7 +1481,8 @@
     "description": "aumenta un nivel el ataque del usuario.",
     "pp": 40,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 139,
@@ -1357,7 +1492,8 @@
     "description": "Dobla la defensa especial del usuario.",
     "pp": 30,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 140,
@@ -1367,7 +1503,8 @@
     "description": "Causa un daño variable al oponente, elegido al azar de un número entre 0,5 y 1,5 veces el nivel del usuario.",
     "pp": 15,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 141,
@@ -1377,7 +1514,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de confundir al objetivo.",
     "pp": 20,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 142,
@@ -1387,7 +1525,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de bajar en un nivel el especial del objetivo.",
     "pp": 20,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 143,
@@ -1397,7 +1536,8 @@
     "description": "Dobla la defensa física del usuario.",
     "pp": 20,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 144,
@@ -1407,7 +1547,8 @@
     "description": "Permite huir de combates individuales.",
     "pp": 20,
     "id_type": 11,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 145,
@@ -1417,7 +1558,8 @@
     "description": "Causa daño.",
     "pp": 10,
     "id_type": 12,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 146,
@@ -1427,7 +1569,8 @@
     "description": "Causa daño.",
     "pp": 15,
     "id_type": 12,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 147,
@@ -1437,7 +1580,8 @@
     "description": "Cava en el primer turno y el segundo turno ataca.",
     "pp": 10,
     "id_type": 13,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 148,
@@ -1447,7 +1591,8 @@
     "description": "Si acierta, provoca un golpe fulminante.",
     "pp": 5,
     "id_type": 13,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 149,
@@ -1457,7 +1602,8 @@
     "description": "Causa daño y tiene una probabilidad del 10% de hacer retroceder al objetivo.",
     "pp": 20,
     "id_type": 13,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 150,
@@ -1467,7 +1613,8 @@
     "description": "Causa daño, golpeando al objetivo en un mismo turno.",
     "pp": 10,
     "id_type": 13,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 151,
@@ -1477,7 +1624,8 @@
     "description": "Causa daño.",
     "pp": 10,
     "id_type": 13,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 152,
@@ -1487,7 +1635,8 @@
     "description": "Causa daño y tiene una probabilidad deñ 10% de bajar un nivel la defensa del objetivo.",
     "pp": 30,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 153,
@@ -1497,7 +1646,8 @@
     "description": "Sube en dos niveles la defensa del usuario.",
     "pp": 20,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 154,
@@ -1507,7 +1657,8 @@
     "description": "Envenena al objetivo",
     "pp": 40,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 155,
@@ -1517,7 +1668,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de envenenar al oponente.",
     "pp": 35,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 156,
@@ -1527,7 +1679,8 @@
     "description": "Causa daño y tiene una probabilidad del 40% de envenar al objetivo.",
     "pp": 20,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 157,
@@ -1537,7 +1690,8 @@
     "description": "Envenena al objetivo",
     "pp": 35,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 158,
@@ -1547,7 +1701,8 @@
     "description": "Causa daño y tiene una probabilidad del 30% de envenenar al objetivo.",
     "pp": 20,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 159,
@@ -1557,7 +1712,8 @@
     "description": "provoca un grave envenenamiento que se agrava con el paso de los turnos.",
     "pp": 10,
     "id_type": 14,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 160,
@@ -1567,7 +1723,8 @@
     "description": "Se prepara durante el primer turno. En el segundo turno causa daño al objetivo.",
     "pp": 5,
     "id_type": 15,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 161,
@@ -1577,7 +1734,8 @@
     "description": "Causa daño.",
     "pp": 35,
     "id_type": 15,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 162,
@@ -1587,7 +1745,8 @@
     "description": "Utiliza el último ataque usado que haya tenido al usuario por objetivo. ",
     "pp": 20,
     "id_type": 15,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 164,
@@ -1597,7 +1756,8 @@
     "description": "Causa daño.",
     "pp": 20,
     "id_type": 15,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 165,
@@ -1607,7 +1767,8 @@
     "description": "Causa daño.",
     "pp": 35,
     "id_type": 15,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 166,
@@ -1617,7 +1778,8 @@
     "description": " emplea dos turnos: en el primero, el Pokémon vuela muy alto, tanto que estará fuera del alcance de la mayoría de los movimientos. En el segundo turno ocurre la caída del vuelo, en la cual el Pokémon golpea al oponente, pero puede ser interrumpida de muchas maneras.",
     "pp": 15,
     "id_type": 15,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 167,
@@ -1627,7 +1789,8 @@
     "description": "Restricción causa daño y tiene una probabilidad del 10% de bajar un nivel la velocidad del oponente.",
     "pp": 35,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   },
   {
     "id": 168,
@@ -1637,6 +1800,7 @@
     "description": "Causa daño y tiene una probabilidad del 20% de confundir al objetivo.",
     "pp": 10,
     "id_type": 9,
-    "priority": 0
+    "priority": 0,
+    "is_deleted": false
   }
 ]

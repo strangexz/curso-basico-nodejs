@@ -2,144 +2,66 @@
   {
     "id": 1,
     "name": "Ash",
-    "party": [
-      25,
-      143,
-      3,
-      6,
-      9
-    ]
+    "is_deleted": false
   },
   {
     "id": 2,
     "name": "Gary",
-    "party": [
-      18,
-      65,
-      103,
-      112,
-      130
-    ]
+    "is_deleted": false
   },
   {
     "id": 3,
     "name": "Brook",
-    "party": [
-      74,
-      95,
-      111,
-      138,
-      28
-    ]
+    "is_deleted": false
   },
   {
     "id": 4,
     "name": "Misty",
-    "party": [
-      55,
-      61,
-      72,
-      119,
-      121
-    ]
+    "is_deleted": false
   },
   {
     "id": 5,
     "name": "Lt. Surge",
-    "party": [
-      26,
-      100,
-      125,
-      135,
-      81
-    ]
+    "is_deleted": false
   },
   {
     "id": 6,
     "name": "Erika",
-    "party": [
-      114,
-      103,
-      2,
-      45,
-      71
-    ]
+    "is_deleted": false
   },
   {
     "id": 7,
     "name": "Koga",
-    "party": [
-      109,
-      48,
-      49,
-      89,
-      33
-    ]
+    "is_deleted": false
   },
   {
     "id": 8,
     "name": "Blaine",
-    "party": [
-      38,
-      59,
-      78,
-      136,
-      126
-    ]
+    "is_deleted": false
   },
   {
     "id": 9,
     "name": "Giovanni",
-    "party": [
-      31,
-      34,
-      53,
-      112,
-      115
-    ]
+    "is_deleted": false
   },
   {
     "id": 10,
     "name": "Lorelei",
-    "party": [
-      87,
-      91,
-      80,
-      131,
-      124
-    ]
+    "is_deleted": false
   },
   {
     "id": 11,
     "name": "Bruno",
-    "party": [
-      68,
-      57,
-      107,
-      106,
-      75
-    ]
+    "is_deleted": false
   },
   {
     "id": 12,
     "name": "Agatha",
-    "party": [
-      92,
-      93,
-      94,
-      24,
-      42
-    ]
+    "is_deleted": false
   },
   {
     "id": 13,
     "name": "Lance",
-    "party": [
-      148,
-      149,
-      130,
-      142,
-      147
-    ]
+    "is_deleted": false
   }
 ]

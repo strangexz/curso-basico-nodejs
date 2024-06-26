@@ -8,7 +8,8 @@
     "attack": 49,
     "defense": 49,
     "special": 65,
-    "speed": 45
+    "speed": 45,
+    "is_deleted": false
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "attack": 62,
     "defense": 63,
     "special": 80,
-    "speed": 60
+    "speed": 60,
+    "is_deleted": false
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "attack": 82,
     "defense": 83,
     "special": 100,
-    "speed": 80
+    "speed": 80,
+    "is_deleted": false
   },
   {
     "id": 6,
@@ -41,7 +44,8 @@
     "attack": 84,
     "defense": 78,
     "special": 97,
-    "speed": 100
+    "speed": 100,
+    "is_deleted": false
   },
   {
     "id": 7,
@@ -52,7 +56,8 @@
     "attack": 48,
     "defense": 65,
     "special": 57,
-    "speed": 43
+    "speed": 43,
+    "is_deleted": false
   },
   {
     "id": 8,
@@ -63,7 +68,8 @@
     "attack": 63,
     "defense": 80,
     "special": 73,
-    "speed": 58
+    "speed": 58,
+    "is_deleted": false
   },
   {
     "id": 9,
@@ -74,7 +80,8 @@
     "attack": 83,
     "defense": 100,
     "special": 95,
-    "speed": 78
+    "speed": 78,
+    "is_deleted": false
   },
   {
     "id": 12,
@@ -85,7 +92,8 @@
     "attack": 45,
     "defense": 50,
     "special": 80,
-    "speed": 70
+    "speed": 70,
+    "is_deleted": false
   },
   {
     "id": 25,
@@ -96,7 +104,8 @@
     "attack": 55,
     "defense": 30,
     "special": 45,
-    "speed": 90
+    "speed": 90,
+    "is_deleted": false
   },
   {
     "id": 59,
@@ -107,7 +116,8 @@
     "attack": 110,
     "defense": 80,
     "special": 90,
-    "speed": 95
+    "speed": 95,
+    "is_deleted": false
   },
   {
     "id": 89,
@@ -118,7 +128,8 @@
     "attack": 105,
     "defense": 75,
     "special": 83,
-    "speed": 50
+    "speed": 50,
+    "is_deleted": false
   },
   {
     "id": 115,
@@ -129,7 +140,8 @@
     "attack": 95,
     "defense": 80,
     "special": 60,
-    "speed": 90
+    "speed": 90,
+    "is_deleted": false
   },
   {
     "id": 125,
@@ -140,7 +152,8 @@
     "attack": 83,
     "defense": 57,
     "special": 95,
-    "speed": 105
+    "speed": 105,
+    "is_deleted": false
   },
   {
     "id": 133,
@@ -151,6 +164,7 @@
     "attack": 55,
     "defense": 50,
     "special": 55,
-    "speed": 55
+    "speed": 55,
+    "is_deleted": false
   }
 ]
