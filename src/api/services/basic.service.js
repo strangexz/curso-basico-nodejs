@@ -1,14 +1,17 @@
+const log = require('../config/logger')(module);
+
 /**
- * Obtención de operaciones
+ * Método que tiene como función devolver los datos de un archivo JSON
  *
- * Método que tiene como función devolver los datos de un
- * archivo JSON
- *
- * @returns {JSON} objeto JSON con los datos a devolver
+ * @param {Array} methods - arreglo de una cadena de caracteres con los métodos a obtener
+ * @returns {JSON} objeto JSON con 3 atributos:
+ * - isOk: booleano que indica si la transacción es exitosa
+ * - data: objeto con los datos solicitados
+ * - error: descripción del error si es que existe
  */
 const getOperations = (methods) => {
   try {
-    console.log('Inicio servicio getOperations');
+    log.verbose('Inicio servicio getOperations');
 
     const operations = require('../../data/data.json');
     let data;
@@ -22,36 +25,42 @@ const getOperations = (methods) => {
       data = operations;
     }
 
-    console.log(data);
-    console.log('Fin servicio getOperations');
+    log.debug(JSON.stringify(data));
+    log.verbose('Fin servicio getOperations');
 
     return { isOk: true, data, error: null };
   } catch (e) {
-    console.error('=>', e);
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
 
 /**
+ * Método que tiene como función devolver un registro en específico del archivo JSON
  *
- * @param {*} method
- * @returns
+ * @param {String} method - Método web a obtener
+ * @returns {JSON} objeto JSON con 3 atributos:
+ * - isOk: booleano que indica si la transacción es exitosa
+ * - data: objeto con los datos solicitados
+ * - error: descripción del error si es que existe
  */
 const getOperation = (method) => {
   try {
-    console.log('Inicio servicio getOperation');
+    log.verbose('Inicio servicio getOperation');
 
     const operations = require('../../data/data.json');
 
     const data = {};
     data[method] = operations[method];
 
-    console.log(data);
-    console.log('Fin servicio getOperation');
+    log.debug(JSON.stringify(data));
+    log.verbose('Fin servicio getOperation');
 
     return { isOk: true, data, error: null };
   } catch (e) {
-    console.error('=>', e);
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -64,19 +73,23 @@ const getOperation = (method) => {
  *
  * @param {Number} number1 - Numero 1 a sumar
  * @param {Number} number2 - Numero 2 a sumar
- * @returns la suma total de los números
+ * @returns {JSON} objeto JSON con 3 atributos:
+ * - isOk: booleano que indica si la transacción es exitosa
+ * - data: objeto con los datos solicitados
+ * - error: descripción del error si es que existe
  */
 const postAddition = (number1, number2) => {
   try {
-    console.log('Inicio servicio postAddition');
+    log.verbose('Inicio servicio postAddition');
 
     const total = number1 + number2;
 
-    console.log('Fin servicio postAddition');
+    log.verbose('Fin servicio postAddition');
 
     return { isOk: true, data: { number1, number2, total }, error: null };
   } catch (e) {
-    console.error('=>', e);
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -89,19 +102,23 @@ const postAddition = (number1, number2) => {
  *
  * @param {Number} number1 - Numero 1 a sumar
  * @param {Number} number2 - Numero 2 a sumar
- * @returns El producto de los dos números
+ * @returns {JSON} objeto JSON con 3 atributos:
+ * - isOk: booleano que indica si la transacción es exitosa
+ * - data: objeto con los datos solicitados
+ * - error: descripción del error si es que existe
  */
 const putMultiply = (number1, number2) => {
   try {
-    console.log('Inicio servicio putMultiply');
+    log.verbose('Inicio servicio putMultiply');
 
     const product = number1 * number2;
 
-    console.log('Fin servicio putMultiply');
+    log.verbose('Fin servicio putMultiply');
 
     return { isOk: true, data: { number1, number2, product }, error: null };
   } catch (e) {
-    console.error('=>', e);
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -115,21 +132,25 @@ const putMultiply = (number1, number2) => {
  * @param {Number} number1 - Dividendo
  * @param {Number} number2 - Divisor
  * @param {Boolean} getRemainder - necesita el residuo en la respuesta?
- * @returns el cociente de la división de los números
+ * @returns {JSON} objeto JSON con 3 atributos:
+ * - isOk: booleano que indica si la transacción es exitosa
+ * - data: objeto con los datos solicitados
+ * - error: descripción del error si es que existe
  */
 const deleteDivision = (number1, number2, getRemainder) => {
   try {
-    console.log('Inicio servicio deleteDivision');
+    log.verbose('Inicio servicio deleteDivision');
 
     let remainder;
 
     const quotient = number1 / number2;
 
-    console.log('Fin servicio deleteDivision');
+    log.verbose('Fin servicio deleteDivision');
 
     return { isOk: true, data: { number1, number2, quotient }, error: null };
   } catch (e) {
-    console.error('=>', e);
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
