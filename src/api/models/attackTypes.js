@@ -23,6 +23,7 @@ class AttackTypes extends BaseModel {
       properties: {
         id: { type: 'integer' },
         type: { type: 'string', maxLength: 64 },
+        isDeleted: { type: 'boolean' },
       },
     };
   }
