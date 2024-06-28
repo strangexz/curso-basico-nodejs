@@ -1,7 +1,13 @@
 const morgan = require('morgan');
 const path = require('path');
 const rfs = require('rotating-file-stream');
-require('dotenv').config();
+const enviroment = require('dotenv').config();
+
+/* Validación de las variables de entorno*/
+if (enviroment.error) {
+  // Este error debería de detener todo el proceso
+  throw new Error('⚠️ No se encontro el archivo .env ⚠️');
+}
 
 /* Determinando entorno de ejecución */
 const nodeEnv = process.env.NODE_ENV || 'development';

@@ -1,7 +1,6 @@
 const _ = require('underscore');
 
 const log = require('../config/logger')(module);
-
 const AttackTypes = require('../models/attackTypes');
 
 /**

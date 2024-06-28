@@ -38,7 +38,7 @@ const apiRoutes = require('./api/routes');
 app.use('/nodeCourse', router, apiRoutes);
 
 const port = process.env.PORT_SERVER;
-const message = `Hola mundo!!! El API REST en Node JS arrancó en el puerto: ${port}`;
+const message = `El API REST en Node JS arrancó en el puerto: ${port}`;
 
 /*SECTION - Arrancando el servidor */
 app.listen(port, () => {

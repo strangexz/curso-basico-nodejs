@@ -3,10 +3,10 @@
  *
  * @description :: Server-side controller for handling incoming requests.
  */
+const { StatusCodes } = require('http-status-codes');
 const _ = require('underscore');
 const validator = require('validator');
 const path = require('path');
-const { StatusCodes } = require('http-status-codes');
 
 const log = require('../config/logger')(module);
 
