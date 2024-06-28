@@ -5,8 +5,9 @@
  */
 const _ = require('underscore');
 const validator = require('validator');
-const path = require('path');
 const { StatusCodes } = require('http-status-codes');
+
+const log = require('../config/logger')(module);
 
 /* Importando servicios */
 const {
@@ -29,26 +30,43 @@ const {
  * - result: un arreglo con el resultado de la consulta.
  */
 const getAttackTypes = async (req, res) => {
-  console.log('Entrando al controlador getAttackTypes...');
+  log.verbose('Inicio de la ejecucion de getAttackTypes');
+  log.info('Obteniendo los tipos de ataques...');
+
+  let message;
   const response = {};
-  response['isOk'] = false;
 
   try {
+    response['isOk'] = false;
+
     const { isOk, data, error } = await getAttackTypesService();
+
     response['result'] = data;
     response['isOk'] = isOk;
 
-    console.log('Devolviendo respuesta...');
+    log.info('Devolviendo respuesta...');
 
     if (isOk === true) {
-      response['message'] = 'Devolviendo los datos exitosamente';
+      message = 'Datos obtenidos exitosamente';
+      log.info(message);
+      log.verbose('Fin de la ejecucion de getAttackTypes');
+
+      response['message'] = message;
       return res.status(StatusCodes.OK).json(response);
     } else {
-      response['message'] = error;
+      message = error;
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de getAttackTypes');
+
+      response['message'] = message;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
-  } catch (e) {
-    response['message'] = e.stack;
+  } catch (error) {
+    log.error(error.message);
+    console.error(error.stack);
+    log.verbose('Fin de la ejecucion de getAttackTypes');
+
+    response['message'] = error.message;
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
   }
 };
@@ -66,17 +84,23 @@ const getAttackTypes = async (req, res) => {
  * - result: un arreglo con el resultado de la consulta.
  */
 const getAttackTypeById = async (req, res) => {
-  console.log('Entrando al controlador getAttackTypeById...');
+  log.verbose('Inicio de la ejecucion de getAttackTypeById');
+  log.info('Obteniendo el tipo de ataque por su ID...');
 
+  let message;
   const response = {};
-  let id;
-
-  response['isOk'] = false;
 
   try {
+    let id;
+
+    response['isOk'] = false;
+
     // Validar el parámetro 'id'
     if (!validator.isNumeric(req.params.id)) {
-      response['message'] = 'El parámetro "id" debe ser un valor numérico';
+      message = 'El parámetro "id" debe ser un valor numérico';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -85,7 +109,10 @@ const getAttackTypeById = async (req, res) => {
     id = parseInt(req.params.id);
 
     if (id <= 0) {
-      response['message'] = 'El parámetro "id" debe ser mayor que cero';
+      message = 'El parámetro "id" debe ser mayor que cero';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -94,17 +121,30 @@ const getAttackTypeById = async (req, res) => {
     const { isOk, data, error } = await getOneAttackTypeByIdService(id);
     response['result'] = data;
     response['isOk'] = isOk;
-    console.log('Devolviendo respuesta...');
+
+    log.info('Devolviendo respuesta...');
 
     if (isOk === true) {
-      response['message'] = 'Devolviendo los datos exitosamente';
+      message = 'Devolviendo los datos exitosamente';
+      log.info(message);
+      log.verbose('Fin de la ejecucion de getAttackTypeById');
+
+      response['message'] = message;
       return res.status(StatusCodes.OK).json(response);
     } else {
-      response['message'] = error;
+      message = error;
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de getAttackTypeById');
+
+      response['message'] = message;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
-  } catch (e) {
-    response['message'] = e.stack;
+  } catch (error) {
+    log.error(error.message);
+    console.error(error.stack);
+    log.verbose('Fin de la ejecucion de getAttackTypeById');
+
+    response['message'] = error.message;
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
   }
 };
@@ -122,31 +162,43 @@ const getAttackTypeById = async (req, res) => {
  * - result: un arreglo con el resultado de la consulta.
  */
 const recordNewAttackType = async (req, res) => {
-  console.log('Entrando al controlador recordNewAttackType...');
+  log.verbose('Inicio de la ejecucion de recordNewAttackType');
+  log.info('Registrando un nuevo tipo de ataque...');
 
+  let message;
   const response = {};
-  let id, type;
-
-  response['isOk'] = false;
 
   try {
+    let type;
+
+    response['isOk'] = false;
+
     // Validar el parámetro 'type'
     if (_.isUndefined(req.body.type)) {
-      response['message'] = 'El parámetro "type" es requerido';
+      message = 'El parámetro "type" es requerido';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     if (!_.isString(req.body.type)) {
-      response['message'] = 'El parámetro "type" debe ser una cadena de caracteres';
+      message = 'El parámetro "type" debe ser una cadena de caracteres';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     if (!validator.isAlpha(req.body.type)) {
-      response['message'] = 'El parámetro "type" debe ser una alfabetico';
+      message = 'El parámetro "type" debe ser una alfabetico';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -157,26 +209,42 @@ const recordNewAttackType = async (req, res) => {
     const existingRecord = await getOneAttackTypeByNameService(type);
 
     if (existingRecord.data.length > 0) {
-      response['message'] = 'Ya existe un registro con el "type" enviado';
+      message = 'Ya existe un registro con el "type" enviado';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     const { isOk, data, error } = await recordNewAttackTypeService(type);
+
     response['result'] = data;
     response['isOk'] = isOk;
-    console.log('Devolviendo respuesta...');
+    log.info('Devolviendo respuesta...');
 
     if (isOk === true) {
-      response['message'] = 'Devolviendo los datos exitosamente';
+      message = 'Devolviendo los datos exitosamente';
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de recordNewAttackType');
+
+      response['message'] = message;
       return res.status(StatusCodes.OK).json(response);
     } else {
-      response['message'] = error;
+      message = error;
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de recordNewAttackType');
+
+      response['message'] = message;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
   } catch (e) {
-    response['message'] = e.stack;
+    log.error(error.message);
+    console.error(error.stack);
+    log.verbose('Fin de la ejecucion de recordNewAttackType');
+
+    response['message'] = error.message;
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
   }
 };
@@ -195,17 +263,23 @@ const recordNewAttackType = async (req, res) => {
  * - result: un arreglo con el resultado de la consulta.
  */
 const updateAttackType = async (req, res) => {
-  console.log('Entrando al controlador updateAttackType...');
+  log.verbose('Inicio de la ejecucion de updateAttackType');
+  log.info('Obteniendo las operaciones');
 
+  let message;
   const response = {};
-  let type;
-
-  response['isOk'] = false;
 
   try {
+    let type;
+
+    response['isOk'] = false;
+
     // Validar el parámetro 'id'
     if (!validator.isNumeric(req.params.id)) {
-      response['message'] = 'El parámetro "id" debe ser un valor numérico';
+      message = 'El parámetro "id" debe ser un valor numérico';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -214,7 +288,10 @@ const updateAttackType = async (req, res) => {
     id = parseInt(req.params.id);
 
     if (id <= 0) {
-      response['message'] = 'El parámetro "id" debe ser mayor que cero';
+      message = 'El parámetro "id" debe ser mayor que cero';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -222,14 +299,20 @@ const updateAttackType = async (req, res) => {
 
     // Validar el parámetro 'type'
     if (!_.isString(req.body.type)) {
-      response['message'] = 'El parámetro "type" debe ser una cadena de caracteres';
+      message = 'El parámetro "type" debe ser una cadena de caracteres';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     if (!validator.isAlpha(req.body.type)) {
-      response['message'] = 'El parámetro "type" debe ser una alfabetico';
+      message = 'El parámetro "type" debe ser una alfabetico';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -240,7 +323,10 @@ const updateAttackType = async (req, res) => {
     const existingRecord = await getOneAttackTypeByNameService(type);
 
     if (existingRecord.data.length > 0) {
-      response['message'] = 'Ya existe un registro con el "type" enviado';
+      message = 'Ya existe un registro con el "type" enviado';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -250,17 +336,30 @@ const updateAttackType = async (req, res) => {
 
     response['result'] = data;
     response['isOk'] = isOk;
-    console.log('Devolviendo respuesta...');
+
+    log.info('Devolviendo respuesta...');
 
     if (isOk === true) {
-      response['message'] = 'El registro fue actualizado exitosamente';
+      message = 'El registro fue actualizado exitosamente';
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de updateAttackType');
+
+      response['message'] = message;
       return res.status(StatusCodes.OK).json(response);
     } else {
-      response['message'] = error;
+      message = error;
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de updateAttackType');
+
+      response['message'] = message;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
   } catch (e) {
-    response['message'] = e.stack;
+    log.error(error.message);
+    console.error(error.stack);
+    log.verbose('Fin de la ejecucion de updateAttackType');
+
+    response['message'] = error.message;
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
   }
 };
@@ -279,31 +378,43 @@ const updateAttackType = async (req, res) => {
  * - result: un arreglo con el resultado de la consulta.
  */
 const deleteAttackType = async (req, res) => {
-  console.log('Entrando al controlador updateAttackType...');
+  log.verbose('Inicio de la ejecucion de deleteAttackType');
+  log.info('Obteniendo las operaciones');
 
+  let message;
   const response = {};
-  let type;
-
-  response['isOk'] = false;
 
   try {
+    let type;
+
+    response['isOk'] = false;
+
     // Validar el parámetro 'id'
     if (_.isUndefined(req.body.id)) {
-      response['message'] = 'El parámetro "id" es requerido';
+      message = 'El parámetro "id" es requerido';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     if (!_.isString(req.body.id) && !_.isNumber(req.body.id)) {
-      response['message'] = 'El parámetro "id" debe ser un valor numérico';
+      message = 'El parámetro "id" debe ser un valor numérico';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     if (_.isString(req.body.id) && !validator.isNumeric(req.body.id)) {
-      response['message'] = 'El parámetro "id" debe ser un valor numérico';
+      message = 'El parámetro "id" debe ser un valor numérico';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -312,7 +423,10 @@ const deleteAttackType = async (req, res) => {
     id = parseInt(req.body.id);
 
     if (id <= 0) {
-      response['message'] = 'El parámetro "id" debe ser mayor que cero';
+      message = 'El parámetro "id" debe ser mayor que cero';
+      log.warn(message);
+
+      response['message'] = message;
       response['result'] = req.query;
 
       return res.status(StatusCodes.BAD_REQUEST).json(response);
@@ -322,17 +436,30 @@ const deleteAttackType = async (req, res) => {
 
     response['result'] = data;
     response['isOk'] = isOk;
-    console.log('Devolviendo respuesta...');
+
+    log.info('Devolviendo respuesta...');
 
     if (isOk === true) {
-      response['message'] = 'El registro fue eliminado exitosamente';
+      message = 'El registro fue eliminado exitosamente';
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de deleteAttackType');
+
+      response['message'] = message;
       return res.status(StatusCodes.OK).json(response);
     } else {
+      message = error;
+      log.warn(message);
+      log.verbose('Fin de la ejecucion de deleteAttackType');
+
       response['message'] = error;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
   } catch (e) {
-    response['message'] = e.stack;
+    log.error(error.message);
+    console.error(error.stack);
+    log.verbose('Fin de la ejecucion de deleteAttackType');
+
+    response['message'] = error.message;
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
   }
 };
@@ -342,5 +469,5 @@ module.exports = {
   getAttackTypeById,
   recordNewAttackType,
   updateAttackType,
-  deleteAttackType
+  deleteAttackType,
 };

@@ -40,8 +40,8 @@ const getOperations = (req, res) => {
       for (const method of req.query.methods) {
         if (!validator.isAlpha(method)) {
           message = 'El campo "methods" debe ser una cadena de caracteres';
-
           log.warn(message);
+
           response['message'] = message;
           response['result'] = req.query;
 
@@ -50,8 +50,8 @@ const getOperations = (req, res) => {
 
         if (!_.contains(['get', 'post', 'put', 'delete'], method.toLowerCase())) {
           message = 'El valor del campo "methods" no permitido';
-
           log.warn(message);
+
           response['message'] = message;
           response['result'] = req.query;
 

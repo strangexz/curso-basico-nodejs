@@ -1,5 +1,7 @@
 const _ = require('underscore');
 
+const log = require('../config/logger')(module);
+
 const AttackTypes = require('../models/attackTypes');
 
 /**
@@ -16,16 +18,17 @@ const AttackTypes = require('../models/attackTypes');
  */
 const getAttackTypesService = async () => {
   try {
-    console.log('Inicio servicio getAttackTypesService');
+    log.verbose('Inicio servicio getAttackTypesService');
 
     const data = await AttackTypes.query().select('id', 'type', 'created_at', 'updated_at').where('is_deleted', false);
 
-    console.log(data);
-    console.log('Fin servicio getAttackTypesService');
+    log.debug(JSON.stringify(data));
+    log.verbose('Fin servicio getAttackTypesService');
 
     return { isOk: true, data, error: null };
   } catch (e) {
-    console.error('=>', e);
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -45,15 +48,15 @@ const getAttackTypesService = async () => {
  */
 const getOneAttackTypeByIdService = async (id) => {
   try {
-    console.log('Inicio servicio getOneAttackTypeByIdService');
+    log.verbose('Inicio servicio getOneAttackTypeByIdService');
 
     const data = await AttackTypes.query()
       .select('id', 'type', 'created_at', 'updated_at')
       .findById(id)
       .where('is_deleted', false);
 
-    console.log(data);
-    console.log('Fin servicio getOneAttackTypeByIdService');
+    log.debug(JSON.stringify(data));
+    log.verbose('Fin servicio getOneAttackTypeByIdService');
 
     if (_.isUndefined(data)) {
       return { isOk: false, data: {}, error: 'No se encontró el registro' };
@@ -61,6 +64,8 @@ const getOneAttackTypeByIdService = async (id) => {
       return { isOk: true, data, error: null };
     }
   } catch (e) {
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -80,12 +85,12 @@ const getOneAttackTypeByIdService = async (id) => {
  */
 const getOneAttackTypeByNameService = async (name) => {
   try {
-    console.log('Inicio servicio getOneAttackTypeByNameService');
+    log.verbose('Inicio servicio getOneAttackTypeByNameService');
 
     const data = await AttackTypes.query().select('id', 'type', 'created_at', 'updated_at').where('type', name);
 
-    console.log(data);
-    console.log('Fin servicio getOneAttackTypeByNameService').where('is_deleted', false);
+    log.debug(JSON.stringify(data));
+    log.verbose('Fin servicio getOneAttackTypeByNameService');
 
     if (_.isUndefined(data)) {
       return { isOk: true, data: {}, error: null };
@@ -93,6 +98,8 @@ const getOneAttackTypeByNameService = async (name) => {
       return { isOk: true, data, error: null };
     }
   } catch (e) {
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -111,14 +118,15 @@ const getOneAttackTypeByNameService = async (name) => {
  */
 const recordNewAttackTypeService = async (type) => {
   try {
-    console.log('Inicio servicio recordNewAttackTypeService');
+    log.verbose('Inicio servicio recordNewAttackTypeService');
 
     const registeredRecord = await AttackTypes.query().insert({
       type,
       isDeleted: false,
     });
 
-    console.log('Fin servicio recordNewAttackTypeService');
+    log.debug(JSON.stringify(registeredRecord));
+    log.verbose('Fin servicio recordNewAttackTypeService');
 
     if (_.isUndefined(registeredRecord)) {
       return { isOk: true, data: {}, error: null };
@@ -126,6 +134,8 @@ const recordNewAttackTypeService = async (type) => {
       return { isOk: true, data: registeredRecord, error: null };
     }
   } catch (e) {
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -146,11 +156,12 @@ const recordNewAttackTypeService = async (type) => {
  */
 const updateAttackTypeService = async (id, newName) => {
   try {
-    console.log('Inicio servicio updateAttackTypeService');
+    log.verbose('Inicio servicio updateAttackTypeService');
 
     const updatedRecord = await AttackTypes.query().patchAndFetchById(id, { type: newName });
 
-    console.log('Fin servicio updateAttackTypeService');
+    log.debug(JSON.stringify(updatedRecord));
+    log.verbose('Fin servicio updateAttackTypeService');
 
     if (_.isUndefined(updatedRecord)) {
       return { isOk: false, data: {}, error: 'No se encontró el registro' };
@@ -158,6 +169,8 @@ const updateAttackTypeService = async (id, newName) => {
       return { isOk: true, data: updatedRecord, error: null };
     }
   } catch (e) {
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
@@ -177,10 +190,12 @@ const updateAttackTypeService = async (id, newName) => {
  */
 const deleteAttackTypeService = async () => {
   try {
-    console.log('Inicio servicio deleteAttackTypeService');
+    log.verbose('Inicio servicio deleteAttackTypeService');
 
     const deletedRecord = await AttackTypes.query().patchAndFetchById(id, { isDeleted: true });
-    console.log('Fin servicio deleteAttackTypeService');
+
+    log.debug(JSON.stringify(deletedRecord));
+    log.verbose('Fin servicio deleteAttackTypeService');
 
     if (_.isUndefined(deletedRecord)) {
       return { isOk: false, data: {}, error: 'No se encontró el registro' };
@@ -188,6 +203,8 @@ const deleteAttackTypeService = async () => {
       return { isOk: true, data: deletedRecord, error: null };
     }
   } catch (e) {
+    console.error(e.stack);
+    log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
 };
