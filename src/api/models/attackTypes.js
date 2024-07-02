@@ -27,6 +27,19 @@ class AttackTypes extends BaseModel {
       },
     };
   }
+
+  /* Modificadores de relación */
+  static get modifiers() {
+    return {
+      defaultSelects(builder) {
+        builder.select('id', 'type');
+      },
+
+      orderByAge(builder) {
+        builder.orderBy('id');
+      }
+    };
+  }
 }
 
 module.exports = AttackTypes;
