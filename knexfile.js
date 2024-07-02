@@ -4,6 +4,18 @@
  * @type { Object.<string, import("knex").Knex.Config> }
  */
 module.exports = {
+  test: {
+    client: 'sqlite3',
+    connection: ':memory:',
+    useNullAsDefault: true,
+    migrations: {
+      tableName: 'knex_migrations',
+      directory: __dirname + '/database/migrations',
+    },
+    seeds: {
+      directory: __dirname + '/database/seeds',
+    },
+  },
 
   development: {
     client: 'sqlite3',
