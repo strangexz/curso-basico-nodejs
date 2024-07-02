@@ -6,6 +6,8 @@ const Type = require('../models/type');
 /**
  * Este servicio consulta a la base de datos todos los tipos de pokemon
  *
+ * @param {Booelan} isPopulated - bandera que indica si hay que poblar las relaciones con un valor verdadero
+ *  o solo enviar los inidicadores si el valor es falso
  * @returns un objeto json con 3 atributos:
  * - isOk: valor booleano si es 'true' indica que hubo un error
  *   si es 'false' no hubo error alguno.
@@ -14,14 +16,19 @@ const Type = require('../models/type');
  * - error: en caso de haber un error aquí irá la descripción
  *   de lo contrario se enviará un valor nulo.
  */
-const getTypesService = async () => {
+const getTypesService = async (isPopulated) => {
   try {
     log.verbose('Inicio servicio getTypesService');
 
-    const data = await Type.query()
+    const data =
+      isPopulated === true
+        ? await Type.query()
       .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
       .where('is_deleted', false)
-      .withGraphFetched('attackTypes(defaultSelects)');
+            .withGraphFetched('attackTypes(defaultSelects)')
+        : await Type.query()
+            .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
+            .where('is_deleted', false);
 
     log.debug(JSON.stringify(data));
     log.verbose('Fin servicio getTypesService');
