@@ -239,7 +239,7 @@ const recordNewAttackType = async (req, res) => {
       response['message'] = message;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
-  } catch (e) {
+  } catch (error) {
     log.error(error.message);
     console.error(error.stack);
     log.verbose('Fin de la ejecucion de recordNewAttackType');
@@ -354,7 +354,7 @@ const updateAttackType = async (req, res) => {
       response['message'] = message;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
-  } catch (e) {
+  } catch (error) {
     log.error(error.message);
     console.error(error.stack);
     log.verbose('Fin de la ejecucion de updateAttackType');
