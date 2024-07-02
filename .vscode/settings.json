@@ -1,0 +1,5 @@
+{
+  "jest.runAllTestFirst": false,
+  "jest.autoEnable": false,
+  "jest.runMode": "on-demand"
+}
