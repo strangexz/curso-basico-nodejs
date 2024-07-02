@@ -1,3 +1,4 @@
+const _ = require('underscore');
 const log = require('../config/logger')(module);
 
 /**
@@ -19,6 +20,9 @@ const getOperations = (methods) => {
     if (methods.length > 0) {
       data = {};
       for (const method of methods) {
+        if (_.isUndefined(operations[method])) {
+          return { isOk: false, data: null, error: `El elemento [${method}] no esta definido` };
+        }
         data[method] = operations[method];
       }
     } else {
@@ -57,7 +61,11 @@ const getOperation = (method) => {
     log.debug(JSON.stringify(data));
     log.verbose('Fin servicio getOperation');
 
-    return { isOk: true, data, error: null };
+    if (_.isUndefined(operations[method])) {
+      return { isOk: false, data: null, error: `El elemento [${method}] no esta definido` };
+    } else {
+      return { isOk: true, data, error: null };
+    }
   } catch (e) {
     console.error(e.stack);
     log.error(e.message);
@@ -82,11 +90,15 @@ const postAddition = (number1, number2) => {
   try {
     log.verbose('Inicio servicio postAddition');
 
-    const total = number1 + number2;
+    const total = parseInt(number1) + parseInt(number2);
 
     log.verbose('Fin servicio postAddition');
 
-    return { isOk: true, data: { number1, number2, total }, error: null };
+    if (_.isNaN(total)) {
+      return { isOk: false, data: { number1, number2, total }, error: 'El resultado de la suma debe ser numérico' };
+    } else {
+      return { isOk: true, data: { number1, number2, total }, error: null };
+    }
   } catch (e) {
     console.error(e.stack);
     log.error(e.message);
@@ -111,11 +123,15 @@ const putMultiply = (number1, number2) => {
   try {
     log.verbose('Inicio servicio putMultiply');
 
-    const product = number1 * number2;
+    const product = parseInt(number1) * parseInt(number2);
 
     log.verbose('Fin servicio putMultiply');
 
-    return { isOk: true, data: { number1, number2, product }, error: null };
+    if (_.isNaN(product)) {
+      return { isOk: false, data: { number1, number2, product }, error: 'El resultado del producto debe ser numérico' };
+    } else {
+      return { isOk: true, data: { number1, number2, product }, error: null };
+    }
   } catch (e) {
     console.error(e.stack);
     log.error(e.message);
@@ -141,13 +157,34 @@ const deleteDivision = (number1, number2, getRemainder) => {
   try {
     log.verbose('Inicio servicio deleteDivision');
 
-    let remainder;
-
-    const quotient = number1 / number2;
+    const quotient = parseInt(number1) / parseInt(number2);
+    const remainder = parseInt(number1) % parseInt(number2);
 
     log.verbose('Fin servicio deleteDivision');
 
-    return { isOk: true, data: { number1, number2, quotient }, error: null };
+    if (getRemainder === false && quotient === Infinity) {
+      return { isOk: false, data: { number1, number2, quotient }, error: 'El divisor no puede ser 0' };
+    }
+
+    if (getRemainder === false && _.isNaN(quotient)) {
+      return {
+        isOk: false,
+        data: { number1, number2, quotient },
+        error: 'El cociente de la división debe ser numérico',
+      };
+    }
+
+    if (getRemainder === true && _.isNaN(remainder)) {
+      return {
+        isOk: false,
+        data: { number1, number2, remainder },
+        error: 'El residuo de la división debe ser numérico',
+      };
+    }
+
+    return getRemainder === false
+      ? { isOk: true, data: { number1, number2, quotient }, error: null }
+      : { isOk: true, data: { number1, number2, remainder }, error: null };
   } catch (e) {
     console.error(e.stack);
     log.error(e.message);
