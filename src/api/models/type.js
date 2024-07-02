@@ -30,12 +30,12 @@ class Type extends BaseModel {
   }
 
   /* Este objeto define las relaciones con otros modelos */
-  static get relationMapping() {
+  static get relationMappings() {
     /* Una forma de evitar los "require loops" es importando los modelos aqui */
     const AttackTypesModel = require('../models/attackTypes');
 
     return {
-      attacktype: {
+      attackTypes: {
         relation: BaseModel.BelongsToOneRelation,
         modelClass: AttackTypesModel,
         join: {
