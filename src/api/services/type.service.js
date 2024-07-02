@@ -23,8 +23,8 @@ const getTypesService = async (isPopulated) => {
     const data =
       isPopulated === true
         ? await Type.query()
-      .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
-      .where('is_deleted', false)
+            .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
+            .where('is_deleted', false)
             .withGraphFetched('attackTypes(defaultSelects)')
         : await Type.query()
             .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
@@ -45,6 +45,9 @@ const getTypesService = async (isPopulated) => {
  * Este servicio consulta a la base de datos de un tipo tipos de pokemon en específico
  * por su identificador
  *
+ * @param {Integer} id - identificador del tipo de pokemon
+ * @param {Booelan} isPopulated - bandera que indica si hay que poblar las relaciones con un valor verdadero
+ *  o solo enviar los inidicadores si el valor es falso
  * @returns un objeto json con 3 atributos:
  * - isOk: valor booleano si es 'true' indica que hubo un error
  *   si es 'false' no hubo error alguno.
@@ -53,28 +56,38 @@ const getTypesService = async (isPopulated) => {
  * - error: en caso de haber un error aquí irá la descripción
  *   de lo contrario se enviará un valor nulo.
  */
-const getTypeService = async (id) => {
+const getOneTypeByIdService = async (id, isPopulated) => {
   try {
-    log.verbose('Inicio servicio getTypeService');
+    log.verbose('Inicio servicio getOneTypeByIdService');
 
-    const data = await Type.query()
-      .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
-      .findById(id)
-      .where('is_deleted', false)
-      .withGraphFetched('attackTypes(defaultSelects)');
+    const data =
+      isPopulated === true
+        ? await Type.query()
+            .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
+            .findById(id)
+            .where('is_deleted', false)
+            .withGraphFetched('attackTypes(defaultSelects)')
+        : await Type.query()
+            .select('id', 'name', 'id_attack_type', 'created_at', 'updated_at')
+            .findById(id)
+            .where('is_deleted', false);
 
     log.debug(JSON.stringify(data));
-    log.verbose('Fin servicio getTypeService');
+    log.verbose('Fin servicio getOneTypeByIdService');
 
-    return { isOk: true, data, error: null };
+    if (_.isUndefined(data)) {
+      return { isOk: false, data: {}, error: 'No se encontró el registro' };
+    } else {
+      return { isOk: true, data, error: null };
+    }
   } catch (e) {
     console.error(e.stack);
     log.error(e.message);
     return { isOk: false, data: null, error: e.message };
   }
-}
+};
 
 module.exports = {
   getTypesService,
-  getTypeService
+  getOneTypeByIdService,
 };
