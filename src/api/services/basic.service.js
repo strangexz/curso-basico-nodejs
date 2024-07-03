@@ -10,9 +10,9 @@ const log = require('../config/logger')(module);
  * - data: objeto con los datos solicitados
  * - error: descripción del error si es que existe
  */
-const getOperations = (methods) => {
+const getOperationsService = (methods) => {
   try {
-    log.verbose('Inicio servicio getOperations');
+    log.verbose('Inicio servicio getOperationsService');
 
     const operations = require('../../data/data.json');
     let data;
@@ -30,7 +30,7 @@ const getOperations = (methods) => {
     }
 
     log.debug(JSON.stringify(data));
-    log.verbose('Fin servicio getOperations');
+    log.verbose('Fin servicio getOperationsService');
 
     return { isOk: true, data, error: null };
   } catch (e) {
@@ -49,9 +49,9 @@ const getOperations = (methods) => {
  * - data: objeto con los datos solicitados
  * - error: descripción del error si es que existe
  */
-const getOperation = (method) => {
+const getOperationService = (method) => {
   try {
-    log.verbose('Inicio servicio getOperation');
+    log.verbose('Inicio servicio getOperationService');
 
     const operations = require('../../data/data.json');
 
@@ -59,7 +59,7 @@ const getOperation = (method) => {
     data[method] = operations[method];
 
     log.debug(JSON.stringify(data));
-    log.verbose('Fin servicio getOperation');
+    log.verbose('Fin servicio getOperationService');
 
     if (_.isUndefined(operations[method])) {
       return { isOk: false, data: null, error: `El elemento [${method}] no esta definido` };
@@ -86,13 +86,13 @@ const getOperation = (method) => {
  * - data: objeto con los datos solicitados
  * - error: descripción del error si es que existe
  */
-const postAddition = (number1, number2) => {
+const postAdditionService = (number1, number2) => {
   try {
-    log.verbose('Inicio servicio postAddition');
+    log.verbose('Inicio servicio postAdditionService');
 
     const total = parseInt(number1) + parseInt(number2);
 
-    log.verbose('Fin servicio postAddition');
+    log.verbose('Fin servicio postAdditionService');
 
     if (_.isNaN(total)) {
       return { isOk: false, data: { number1, number2, total }, error: 'El resultado de la suma debe ser numérico' };
@@ -119,13 +119,13 @@ const postAddition = (number1, number2) => {
  * - data: objeto con los datos solicitados
  * - error: descripción del error si es que existe
  */
-const putMultiply = (number1, number2) => {
+const putMultiplyService = (number1, number2) => {
   try {
-    log.verbose('Inicio servicio putMultiply');
+    log.verbose('Inicio servicio putMultiplyService');
 
     const product = parseInt(number1) * parseInt(number2);
 
-    log.verbose('Fin servicio putMultiply');
+    log.verbose('Fin servicio putMultiplyService');
 
     if (_.isNaN(product)) {
       return { isOk: false, data: { number1, number2, product }, error: 'El resultado del producto debe ser numérico' };
@@ -153,14 +153,14 @@ const putMultiply = (number1, number2) => {
  * - data: objeto con los datos solicitados
  * - error: descripción del error si es que existe
  */
-const deleteDivision = (number1, number2, getRemainder) => {
+const deleteDivisionService = (number1, number2, getRemainder) => {
   try {
-    log.verbose('Inicio servicio deleteDivision');
+    log.verbose('Inicio servicio deleteDivisionService');
 
     const quotient = parseInt(number1) / parseInt(number2);
     const remainder = parseInt(number1) % parseInt(number2);
 
-    log.verbose('Fin servicio deleteDivision');
+    log.verbose('Fin servicio deleteDivisionService');
 
     if (getRemainder === false && quotient === Infinity) {
       return { isOk: false, data: { number1, number2, quotient }, error: 'El divisor no puede ser 0' };
@@ -193,9 +193,9 @@ const deleteDivision = (number1, number2, getRemainder) => {
 };
 
 module.exports = {
-  getOperations,
-  getOperation,
-  postAddition,
-  putMultiply,
-  deleteDivision,
+  getOperationsService,
+  getOperationService,
+  postAdditionService,
+  putMultiplyService,
+  deleteDivisionService,
 };
