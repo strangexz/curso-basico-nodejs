@@ -11,7 +11,13 @@ const path = require('path');
 const log = require('../config/logger')(module);
 
 /* Importanto servicios */
-const BasicService = require('../services/basic.service');
+const {
+  getOperationsService,
+  getOperationService,
+  postAdditionService,
+  putMultiplyService,
+  deleteDivisionService,
+} = require('../services/basic.service');
 
 /**
  * Método que tiene como función devolver los datos de un
@@ -62,7 +68,7 @@ const getOperations = (req, res) => {
       }
     }
 
-    const { data, isOk } = BasicService.getOperations(methods);
+    const { data, isOk } = getOperationsService(methods);
 
     response['result'] = data;
     response['isOk'] = isOk;
@@ -126,7 +132,7 @@ const getOperation = (req, res) => {
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
-    const { data, isOk } = BasicService.getOperation(req.params.method);
+    const { data, isOk } = getOperationService(req.params.method);
 
     response['result'] = data;
     response['isOk'] = isOk;
@@ -183,14 +189,25 @@ const postAddition = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
-    if (!_.isNumber(req.body.num1)) {
+    if (!_.isNumber(req.body.num1) && !_.isString(req.body.num1)) {
       message = 'El campo num1 debe ser un número';
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
+      return res.status(StatusCodes.BAD_REQUEST).json(response);
+    }
+
+    if (_.isString(req.body.num1) && !validator.isNumeric(req.body.num1)) {
+      message = 'El campo num1 debe ser un número';
+      log.warn(message);
+
+      response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
@@ -199,20 +216,31 @@ const postAddition = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
-    if (!_.isNumber(req.body.num2)) {
+    if (!_.isNumber(req.body.num2) && !_.isString(req.body.num2)) {
       message = 'El campo num2 debe ser un número';
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
+      return res.status(StatusCodes.BAD_REQUEST).json(response);
+    }
+
+    if (_.isString(req.body.num2) && !validator.isNumeric(req.body.num2)) {
+      message = 'El campo num2 debe ser un número';
+      log.warn(message);
+
+      response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     const num1 = req.body.num1;
     const num2 = req.body.num2;
-    const { data, isOk } = BasicService.postAddition(num1, num2);
+    const { data, isOk } = postAdditionService(num1, num2);
 
     response['result'] = data;
     response['isOk'] = isOk;
@@ -230,6 +258,7 @@ const postAddition = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      console.log('🚀 ~ postAddition ~ response:', response);
       return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json(response);
     }
   } catch (error) {
@@ -269,14 +298,25 @@ const putMultiply = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
-    if (!_.isNumber(req.body.num1)) {
+    if (!_.isNumber(req.body.num1) && !_.isString(req.body.num1)) {
       message = 'El campo num1 debe ser un número';
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
+      return res.status(StatusCodes.BAD_REQUEST).json(response);
+    }
+
+    if (_.isString(req.body.num1) && !validator.isNumeric(req.body.num1)) {
+      message = 'El campo num1 debe ser un número';
+      log.warn(message);
+
+      response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
@@ -285,20 +325,31 @@ const putMultiply = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
-    if (!_.isNumber(req.body.num2)) {
+    if (!_.isNumber(req.body.num2) && !_.isString(req.body.num2)) {
       message = 'El campo num2 debe ser un número';
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
+      return res.status(StatusCodes.BAD_REQUEST).json(response);
+    }
+
+    if (_.isString(req.body.num2) && !validator.isNumeric(req.body.num2)) {
+      message = 'El campo num2 debe ser un número';
+      log.warn(message);
+
+      response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     const num1 = req.body.num1;
     const num2 = req.body.num2;
-    const { data, isOk } = BasicService.putMultiply(num1, num2);
+    const { data, isOk } = putMultiplyService(num1, num2);
 
     response['result'] = data;
     response['isOk'] = isOk;
@@ -310,6 +361,7 @@ const putMultiply = (req, res) => {
       log.info(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.OK).json(response);
     } else {
       message = result.error;
@@ -343,11 +395,26 @@ const deleteDivision = (req, res) => {
   log.verbose('Inicio de la ejecucion de deleteDivision');
   log.info('Realiza una division');
 
-  let message;
+  let message, getRemainder;
   const response = {};
 
   try {
     response['isOk'] = false;
+    getRemainder = false;
+
+    /* validando el valor bandera "getRemainder" */
+    if (!_.isUndefined(req.query.getRemainder)) {
+      if (!validator.isBoolean(req.query.getRemainder)) {
+        message = 'El valor de "getRemainder" debe ser lógico booleano';
+        log.warn(message);
+
+        response['message'] = message;
+        response['result'] = null;
+        return res.status(StatusCodes.BAD_REQUEST).json(response);
+      }
+
+      getRemainder = req.query.getRemainder.toUpperCase() === 'TRUE' ? true : false;
+    }
 
     /* Validando campo "num1" */
     if (_.isUndefined(req.body.num1)) {
@@ -355,23 +422,44 @@ const deleteDivision = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
-    if (!_.isNumber(req.body.num1)) {
+    if (!_.isNumber(req.body.num1) && !_.isString(req.body.num1)) {
       message = 'El campo num1 debe ser un número';
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
+      return res.status(StatusCodes.BAD_REQUEST).json(response);
+    }
+
+    if (_.isString(req.body.num1) && !validator.isNumeric(req.body.num1)) {
+      message = 'El campo num1 debe ser un número';
+      log.warn(message);
+
+      response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     /* Validando campo "num2" */
-    if (_.isUndefined(req.body.num2)) {
-      message = 'Campo num2 requerido';
+    if (!_.isNumber(req.body.num2) && !_.isString(req.body.num2)) {
+      message = 'El campo num2 debe ser un número';
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
+      return res.status(StatusCodes.BAD_REQUEST).json(response);
+    }
+
+    if (_.isString(req.body.num2) && !validator.isNumeric(req.body.num2)) {
+      message = 'El campo num2 debe ser un número';
+      log.warn(message);
+
+      response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
@@ -380,6 +468,7 @@ const deleteDivision = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
@@ -388,12 +477,13 @@ const deleteDivision = (req, res) => {
       log.warn(message);
 
       response['message'] = message;
+      response['result'] = null;
       return res.status(StatusCodes.BAD_REQUEST).json(response);
     }
 
     const num1 = req.body.num1;
     const num2 = req.body.num2;
-    const { data, isOk } = BasicService.deleteDivision(num1, num2);
+    const { data, isOk } = deleteDivisionService(num1, num2, getRemainder);
 
     response['result'] = data;
     response['isOk'] = isOk;
