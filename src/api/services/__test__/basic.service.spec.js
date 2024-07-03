@@ -1,14 +1,14 @@
 const _ = require('underscore');
 
 const operations = require('../../../data/data.json');
-const { getOperations, getOperation, postAddition, putMultiply, deleteDivision } = require('../basic.service');
+const { getOperationsService, getOperationService, postAdditionService, putMultiplyService, deleteDivisionService } = require('../basic.service');
 
 describe('Basic service tests', () => {
-  describe('getOperations service tests', () => {
+  describe('getOperation service tests', () => {
     describe('when get a successfully response', () => {
       it('should be get all operations successfully', () => {
         const methods = [];
-        const response = getOperations(methods);
+        const response = getOperationsService(methods);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -20,7 +20,7 @@ describe('Basic service tests', () => {
 
       it('should be get an specific operation successfully', () => {
         const methods = ['get'];
-        const response = getOperations(methods);
+        const response = getOperationsService(methods);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -34,7 +34,7 @@ describe('Basic service tests', () => {
 
       it('should be get the specifics operation successfully', () => {
         const methods = ['get', 'put', 'delete'];
-        const response = getOperations(methods);
+        const response = getOperationsService(methods);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -50,7 +50,7 @@ describe('Basic service tests', () => {
     describe('when get a unsuccessfully response', () => {
       it('should be get an error', () => {
         const methods = 'get, post, delete, put';
-        const response = getOperations(methods);
+        const response = getOperationsService(methods);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -62,11 +62,11 @@ describe('Basic service tests', () => {
     });
   });
 
-  describe('getOperation service tests', () => {
+  describe('getOperationService service tests', () => {
     describe('when get a successfully response', () => {
       it('should be get an specific operation successfully', () => {
         const method = 'post';
-        const response = getOperation(method);
+        const response = getOperationService(method);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -80,7 +80,7 @@ describe('Basic service tests', () => {
     describe('when get a unsuccessfully response', () => {
       it('should be get an error', () => {
         const method = 'posteo';
-        const response = getOperation(method);
+        const response = getOperationService(method);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -98,7 +98,7 @@ describe('Basic service tests', () => {
         const number1 = 2;
         const number2 = 3;
 
-        const response = postAddition(number1, number2);
+        const response = postAdditionService(number1, number2);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -116,7 +116,7 @@ describe('Basic service tests', () => {
         const number1 = 'dos';
         const number2 = 3;
 
-        const response = postAddition(number1, number2);
+        const response = postAdditionService(number1, number2);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -132,7 +132,7 @@ describe('Basic service tests', () => {
         const number1 = 'dos';
         const number2 = 'tres';
 
-        const response = postAddition(number1, number2);
+        const response = postAdditionService(number1, number2);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -153,7 +153,7 @@ describe('Basic service tests', () => {
         const number2 = 3;
         const getRemainder = false;
 
-        const response = putMultiply(number1, number2, getRemainder);
+        const response = putMultiplyService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -172,7 +172,7 @@ describe('Basic service tests', () => {
         const number2 = 3;
         const getRemainder = false;
 
-        const response = putMultiply(number1, number2, getRemainder);
+        const response = putMultiplyService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -189,7 +189,7 @@ describe('Basic service tests', () => {
         const number2 = 'tres';
         const getRemainder = false;
 
-        const response = putMultiply(number1, number2, getRemainder);
+        const response = putMultiplyService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -210,7 +210,7 @@ describe('Basic service tests', () => {
         const number2 = 3;
         const getRemainder = false;
 
-        const response = deleteDivision(number1, number2, getRemainder);
+        const response = deleteDivisionService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -227,7 +227,7 @@ describe('Basic service tests', () => {
         const number2 = 3;
         const getRemainder = true;
 
-        const response = deleteDivision(number1, number2, getRemainder);
+        const response = deleteDivisionService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeTruthy();
@@ -246,7 +246,7 @@ describe('Basic service tests', () => {
         const number2 = 0;
         const getRemainder = false;
 
-        const response = deleteDivision(number1, number2, getRemainder);
+        const response = deleteDivisionService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -263,7 +263,7 @@ describe('Basic service tests', () => {
         const number2 = 0;
         const getRemainder = true;
 
-        const response = deleteDivision(number1, number2, getRemainder);
+        const response = deleteDivisionService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
@@ -280,7 +280,7 @@ describe('Basic service tests', () => {
         const number2 = 'zero';
         const getRemainder = false;
 
-        const response = deleteDivision(number1, number2, getRemainder);
+        const response = deleteDivisionService(number1, number2, getRemainder);
 
         expect(response.isOk).toBeDefined();
         expect(response.isOk).toBeFalsy();
