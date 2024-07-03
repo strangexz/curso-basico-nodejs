@@ -1,4 +1,3 @@
-const validator = require('validator');
 const _ = require('underscore');
 
 const operations = require('../../../data/data.json');
