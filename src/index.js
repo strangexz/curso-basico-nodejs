@@ -1,7 +1,7 @@
 const express = require('express');
 const enviroment = require('dotenv').config();
 
-const log = require('./api/config/logger')(module)
+const log = require('./api/config/logger')(module);
 const accessLogger = require('../src/api/config/accessLogger');
 
 /* Implementación de express */
@@ -42,8 +42,10 @@ const message = `El API REST en Node JS arrancó en el puerto: ${port}`;
 
 /*SECTION - Arrancando el servidor */
 app.listen(port, () => {
-  log.info('******************************************************************************')
-  log.info('************************ API CURSO DE NODEJS BASICO **************************')
-  log.info('******************************************************************************')
+  log.info('******************************************************************************');
+  log.info('************************ API CURSO DE NODEJS BASICO **************************');
+  log.info('******************************************************************************');
   log.info(message);
 });
+
+module.exports = app;
