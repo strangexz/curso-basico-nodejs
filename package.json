@@ -10,7 +10,7 @@
     "db:setup-dev": "cross-env NODE_ENV=development npm run db:migrate-dev && npm run db:seed-dev",
     "db:reset-dev": "cross-env NODE_ENV=development npm run db:rollback-dev && npm run db:setup-dev",
     "lint": "npx eslint --max-warnings=0 --report-unused-disable-directives && echo '✔  Your js files look good'",
-    "test": "jest --detectOpenHandles --forceExit",
+    "test": "jest --silent --detectOpenHandles --forceExit --logHeapUsage",
     "dev": "nodemon",
     "start": "node src/"
   },
