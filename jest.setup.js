@@ -11,9 +11,12 @@ beforeAll(async () => {
       jest.useRealTimers();
       return;
     })
-    .then(() => {
+    .then(async () => {
       // migrations are finished
       console.info('Seeder finished!');
+      const c = await knex('attack_types').count('id');
+      console.log('🚀 ~ .then ~ c:', c);
+      // expect(knex('attack_types').count({ count: '*' })).toBeGreaterThan(0);
     });
 }, 60000);
 
