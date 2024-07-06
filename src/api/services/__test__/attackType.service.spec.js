@@ -7,11 +7,11 @@ describe('Attack type services tests', () => {
     describe('when get a successfully response', () => {
       it('should be return all attack types', async () => {
         const response = await getAttackTypesService();
-        console.log("🚀 ~ it ~ response:", response)
 
         expect(response.isOk).toBeDefined();
-        expect(response.isOk).toBeFalsy();
+        expect(response.isOk).toBeTruthy();
         expect(response.data).toBeDefined();
+
         for (const attackType of response.data) {
           expect(attackType.id).toBeDefined();
           expect(attackType.id).toEqual(expect.any(Number));
@@ -26,7 +26,7 @@ describe('Attack type services tests', () => {
         }
 
         expect(response.error).toBeDefined();
-        expect.stringContaining(response.error);
+        expect(response.error).toBeNull();
       });
     });
 
