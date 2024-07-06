@@ -7,7 +7,7 @@ const secondTableName = 'moves';
  */
 exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
-    table.increments('id');
+    table.increments('id').primary();
     table.integer('id_pokemon', 64).references('id').inTable(firstTableName);
     table.integer('id_move', 64).references('id').inTable(secondTableName);
   });

@@ -5,7 +5,7 @@ const tableName = 'pokemons';
  */
 exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
-    table.increments('id');
+    table.increments('id').primary();
     table.string('name', 64);
     table.string('description');
     table.integer('ps');

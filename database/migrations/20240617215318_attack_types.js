@@ -6,7 +6,7 @@ const tableName = 'attack_types';
  */
 exports.up = function (knex) {
   return knex.schema.createTable(tableName, (table) => {
-    table.increments('id');
+    table.increments('id').primary();
     table.string('type', 64);
     table.boolean('is_deleted');
     table.timestamps(true, true);

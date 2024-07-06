@@ -7,7 +7,7 @@ const foreignTableName = 'attack_types'
  */
 exports.up = function(knex) {
   return knex.schema.createTable(tableName, (table) => {
-    table.increments('id');
+    table.increments('id').primary();
     table.string('name', 64);
     table.integer('id_attack_type').unsigned();
     table.foreign('id_attack_type').references('id').inTable(foreignTableName);
